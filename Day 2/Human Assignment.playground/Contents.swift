@@ -32,6 +32,7 @@ class BodyPart {
     var isBroken: Bool
     var isEdible: Bool
     var length: Int
+    
     init() {
         
         self.numberOfPart = 0
@@ -47,6 +48,12 @@ class BodyPart {
     }
     func removeBodyPart() {
         self.isAttached = false
+    }
+    func eatBodyPart() {
+        self.isEdible = true
+    }
+    func crushBodyPart() {
+        self.isBroken = true
     }
 }
 class Head: BodyPart {
@@ -147,8 +154,13 @@ class Legs: BodyPart {
         self.hasHair = true
         self.isEdible = false
     }
+    func walk() {
 }
-class Fingers: BodyPart {
+    func trip() {
+}
+    func kick() {
+}
+class Finger: BodyPart {
     override init() {
         super.init()
         self.isBroken = true
@@ -163,6 +175,12 @@ class Thumbs: BodyPart {
         self.color = Color.Pink
         self.numberOfPart = 2
     }
+    func goodJob() {
+    }
+    func gouge() {
+    }
+    func execute() {
+    }
 }
 class Teeth: BodyPart {
     override init() {
@@ -170,6 +188,12 @@ class Teeth: BodyPart {
         self.color = Color.White
         self.numberOfPart = 28
         self.isEdible = false
+    }
+    func bite() {
+    }
+    func gnash() {
+    }
+    func fallOut() {
     }
 }
 class Ears: BodyPart {
@@ -179,6 +203,12 @@ class Ears: BodyPart {
         self.isAttached = true
         self.length = 4
     }
+    func hear() {
+    }
+    func bleed() {
+    }
+    func gauge() {
+    }
 }
 class Eyes: BodyPart {
     override init() {
@@ -187,6 +217,12 @@ class Eyes: BodyPart {
         self.hasHair = false
         self.numberOfPart = 2
     }
+    func look() {
+    }
+    func glare() {
+    }
+    func shootLasers() {
+    }
 }
 class Nose: BodyPart {
     override init() {
@@ -194,6 +230,12 @@ class Nose: BodyPart {
         self.isBroken = true
         self.length = 5
         self.weight = 1
+    }
+    func smell() {
+    }
+    func snortCocaine() {
+    }
+    func sneeze() {
     }
 }
 //13
@@ -204,6 +246,12 @@ class Tongue: BodyPart {
         self.length = 2
         self.isAttached = true
     }
+    func lick() {
+    }
+    func remove() {
+    }
+    func pullThroughThroat() {
+    }
 }
 class Lungs: BodyPart {
     override init() {
@@ -212,6 +260,12 @@ class Lungs: BodyPart {
         self.hasHair = true
         self.numberOfPart = 2
     }
+    func smoke() {
+    }
+    func haveCancer() {
+    }
+    func fillWithFluid() {
+    }
 }
 class Liver: BodyPart {
     override init() {
@@ -219,6 +273,12 @@ class Liver: BodyPart {
         self.color = Color.Red
         self.isAttached = true
         self.isBroken = true
+    }
+    func processAlcohol() {
+    }
+    func contractPsoriasis() {
+    }
+    func regrow() {
     }
 }
 //16
@@ -229,6 +289,12 @@ class Kidney: BodyPart {
         self.numberOfPart = 2
         self.length = 4
     }
+    func removeToxins() {
+    }
+    func fail() {
+    }
+    func causeJaundice() {
+    }
 }
 class Brain: BodyPart {
     override init() {
@@ -236,6 +302,12 @@ class Brain: BodyPart {
         self.weight = 8
         self.isEdible = true
         self.human = true
+    }
+    func think() {
+    }
+    func hemorrhage() {
+    }
+    func removeFrontalLobe() {
     }
 }
 class Heart: BodyPart {
@@ -245,6 +317,12 @@ class Heart: BodyPart {
         self.weight = 5
         self.color = Color.Red
     }
+    func tacchycardia() {
+    }
+    func murmur() {
+    }
+    func arrest() {
+    }
 }
 class Skull: BodyPart {
     override init() {
@@ -252,6 +330,12 @@ class Skull: BodyPart {
         self.color = Color.White
         self.numberOfPart = 1
         self.weight = 5
+    }
+    func crack() {
+    }
+    func lookSpooky() {
+    }
+    func protectBrain() {
     }
 }
 class Stomach: BodyPart {
@@ -261,6 +345,12 @@ class Stomach: BodyPart {
         self.isAttached = true
         self.hasHair = false
     }
+    func digest() {
+    }
+    func puke() {
+    }
+    func autocannibalize() {
+    }
 }
-var tendon = Fingers()
-tendon.removeBodyPart()
+}
+
