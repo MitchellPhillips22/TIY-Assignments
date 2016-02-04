@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpyLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hYb-He-pgG">
+                                <rect key="frame" x="60" y="48" width="480" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="TTk-xV-YR3"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qbf-IH-DfJ">
+                                <rect key="frame" x="60" y="121" width="480" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="oQn-Zh-6JI"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfW-31-xEu">
+                                <rect key="frame" x="245" y="209" width="109" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.57000000000000006" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="AUTHENTICATE">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="authenticate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cMl-Fj-2kC"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="TIYLogo" translatesAutoresizingMaskIntoConstraints="NO" id="r4d-v0-Rn3">
+                                <rect key="frame" x="180" y="318" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="r4d-v0-Rn3" secondAttribute="height" multiplier="0.5:0.5" id="JOk-42-Q5u"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9j-Di-6IX">
+                                <rect key="frame" x="60" y="275" width="480" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WfW-31-xEu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2qJ-Jn-yz4"/>
+                            <constraint firstItem="qbf-IH-DfJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="43A-W9-79x"/>
+                            <constraint firstItem="i9j-Di-6IX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Cq-o0-eOK"/>
+                            <constraint firstItem="i9j-Di-6IX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="5Go-yw-VD2"/>
+                            <constraint firstItem="r4d-v0-Rn3" firstAttribute="top" secondItem="i9j-Di-6IX" secondAttribute="bottom" constant="43" id="5le-6Z-5hx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="r4d-v0-Rn3" secondAttribute="bottom" constant="15" id="86G-az-uc9"/>
+                            <constraint firstItem="qbf-IH-DfJ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="Ha8-8r-Jh1"/>
+                            <constraint firstItem="hYb-He-pgG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="28" id="HgA-Dc-1Nt"/>
+                            <constraint firstItem="hYb-He-pgG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L2T-dm-sBd"/>
+                            <constraint firstItem="WfW-31-xEu" firstAttribute="top" secondItem="qbf-IH-DfJ" secondAttribute="bottom" constant="58" id="MVH-qx-joy"/>
+                            <constraint firstItem="r4d-v0-Rn3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RXD-ED-UUF"/>
+                            <constraint firstItem="i9j-Di-6IX" firstAttribute="top" secondItem="WfW-31-xEu" secondAttribute="bottom" constant="36" id="T5F-O3-xTW"/>
+                            <constraint firstItem="hYb-He-pgG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="VIb-Jg-H6B"/>
+                            <constraint firstItem="qbf-IH-DfJ" firstAttribute="top" secondItem="hYb-He-pgG" secondAttribute="bottom" constant="43" id="Znj-bW-VAF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="authButton" destination="WfW-31-xEu" id="tIb-eU-7tA"/>
+                        <outlet property="greetingLabel" destination="i9j-Di-6IX" id="CnR-02-2j9"/>
+                        <outlet property="lastNameTextField" destination="qbf-IH-DfJ" id="LbF-MK-7jV"/>
+                        <outlet property="nameTextField" destination="hYb-He-pgG" id="YXg-il-iXj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="pYB-9d-8Af"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="309"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TIYLogo" width="240" height="212"/>
+    </resources>
+</document>
