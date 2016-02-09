@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     var count: Int = 10
     
-    let speed: NSTimeInterval = 0.5
+    let speed: NSTimeInterval = 0.3
     
     
     
