@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="i18-fB-egj">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Sansita-ExtraBoldItalic.otf">
+            <string>Sansita-ExtraBoldItalic</string>
+            <string>Sansita-ExtraBoldItalic</string>
+            <string>Sansita-ExtraBoldItalic</string>
+            <string>Sansita-ExtraBoldItalic</string>
+            <string>Sansita-ExtraBoldItalic</string>
+            <string>Sansita-ExtraBoldItalic</string>
+            <string>Sansita-ExtraBoldItalic</string>
+            <string>Sansita-ExtraBoldItalic</string>
+            <string>Sansita-ExtraBoldItalic</string>
+            <string>Sansita-ExtraBoldItalic</string>
+            <string>Sansita-ExtraBoldItalic</string>
+            <string>Sansita-ExtraBoldItalic</string>
+            <string>Sansita-ExtraBoldItalic</string>
+            <string>Sansita-ExtraBoldItalic</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Jackpot-->
+        <scene sceneID="Nug-to-ZgC">
+            <objects>
+                <tableViewController id="ZoQ-zx-TbK" customClass="TicketTableViewController" customModule="jackpotApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="VTt-ki-dNP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TicketCell" id="hvz-gE-vXz" customClass="TicketTableViewCell" customModule="jackpotApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hvz-gE-vXz" id="imj-3d-1Ct">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="FW6-RI-XQQ">
+                                            <rect key="frame" x="70" y="13" width="400" height="21"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfA-Tb-afh">
+                                                    <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Sansita-ExtraBoldItalic" family="Sansita" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71e-c2-nnM">
+                                                    <rect key="frame" x="72" y="0.0" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Sansita-ExtraBoldItalic" family="Sansita" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNK-NZ-vA5">
+                                                    <rect key="frame" x="144" y="0.0" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Sansita-ExtraBoldItalic" family="Sansita" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYS-cy-hge">
+                                                    <rect key="frame" x="215" y="0.0" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Sansita-ExtraBoldItalic" family="Sansita" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9P3-MK-VpZ">
+                                                    <rect key="frame" x="287" y="0.0" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Sansita-ExtraBoldItalic" family="Sansita" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGa-i5-WmS">
+                                                    <rect key="frame" x="359" y="0.0" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Sansita-ExtraBoldItalic" family="Sansita" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="400" id="Lcw-mP-DCo"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="FW6-RI-XQQ" firstAttribute="centerY" secondItem="imj-3d-1Ct" secondAttribute="centerY" id="7lA-CX-uFB"/>
+                                        <constraint firstItem="FW6-RI-XQQ" firstAttribute="centerX" secondItem="imj-3d-1Ct" secondAttribute="centerX" id="acp-ne-zjI"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="label1" destination="HfA-Tb-afh" id="eg3-1O-c0o"/>
+                                    <outlet property="label2" destination="71e-c2-nnM" id="whQ-WY-dt7"/>
+                                    <outlet property="label3" destination="RNK-NZ-vA5" id="Joc-S7-OK5"/>
+                                    <outlet property="label4" destination="YYS-cy-hge" id="QZ4-cd-IwM"/>
+                                    <outlet property="label5" destination="9P3-MK-VpZ" id="FxB-Ea-zeq"/>
+                                    <outlet property="label6" destination="KGa-i5-WmS" id="fot-eO-AIb"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ZoQ-zx-TbK" id="o38-AD-fQC"/>
+                            <outlet property="delegate" destination="ZoQ-zx-TbK" id="ymJ-Z3-K9q"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Jackpot" id="0AN-pX-v9R">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="KNb-Sl-oyy">
+                            <connections>
+                                <action selector="addTicket:" destination="ZoQ-zx-TbK" id="UBd-am-JbC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ticketTableView" destination="VTt-ki-dNP" id="rLj-G7-j98"/>
+                        <segue destination="fhA-Tf-tbZ" kind="show" identifier="ballViewerSegue" id="0F1-Tj-2ty"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZz-tT-2gZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1931" y="-378"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gTh-4P-Og2">
+            <objects>
+                <viewController id="fhA-Tf-tbZ" customClass="ViewController" customModule="jackpotApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ttr-O9-EOX"/>
+                        <viewControllerLayoutGuide type="bottom" id="EUa-fd-jVp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oxu-mj-d1o">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DgS-v6-vfB">
+                                <rect key="frame" x="93" y="300" width="414" height="72"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yl1-PL-lgD">
+                                        <rect key="frame" x="0.0" y="0.0" width="69" height="72"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="orangeBall" translatesAutoresizingMaskIntoConstraints="NO" id="LSG-wh-JC3">
+                                                <rect key="frame" x="0.0" y="0.0" width="69.5" height="69"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="69" id="EMo-MJ-A3Y"/>
+                                                    <constraint firstAttribute="height" constant="69" id="w1K-Qe-Bym"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHY-uG-yEH">
+                                                <rect key="frame" x="13" y="24" width="41.5" height="21"/>
+                                                <fontDescription key="fontDescription" name="Sansita-ExtraBoldItalic" family="Sansita" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="LSG-wh-JC3" firstAttribute="centerY" secondItem="yl1-PL-lgD" secondAttribute="centerY" id="Fwj-si-4tF"/>
+                                            <constraint firstItem="LSG-wh-JC3" firstAttribute="centerX" secondItem="yl1-PL-lgD" secondAttribute="centerX" id="WuO-mK-0uy"/>
+                                            <constraint firstItem="YHY-uG-yEH" firstAttribute="centerY" secondItem="yl1-PL-lgD" secondAttribute="centerY" id="lOp-oB-vdS"/>
+                                            <constraint firstItem="YHY-uG-yEH" firstAttribute="centerX" secondItem="yl1-PL-lgD" secondAttribute="centerX" id="o0I-mJ-VeI"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Uv-kN-Ihg">
+                                        <rect key="frame" x="69" y="0.0" width="69" height="72"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="orangeBall" translatesAutoresizingMaskIntoConstraints="NO" id="fiM-tk-DCO">
+                                                <rect key="frame" x="0.0" y="0.0" width="69.5" height="69"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="69" id="Otb-Tc-u9A"/>
+                                                    <constraint firstAttribute="height" constant="69" id="hrw-a8-yed"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZA-BT-opJ">
+                                                <rect key="frame" x="13" y="24" width="41.5" height="21"/>
+                                                <fontDescription key="fontDescription" name="Sansita-ExtraBoldItalic" family="Sansita" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="PZA-BT-opJ" firstAttribute="centerX" secondItem="6Uv-kN-Ihg" secondAttribute="centerX" id="BZ0-c9-4nJ"/>
+                                            <constraint firstItem="fiM-tk-DCO" firstAttribute="centerX" secondItem="6Uv-kN-Ihg" secondAttribute="centerX" id="eNk-nQ-ePu"/>
+                                            <constraint firstItem="PZA-BT-opJ" firstAttribute="centerY" secondItem="6Uv-kN-Ihg" secondAttribute="centerY" id="qTb-wm-JL7"/>
+                                            <constraint firstItem="fiM-tk-DCO" firstAttribute="centerY" secondItem="6Uv-kN-Ihg" secondAttribute="centerY" id="teK-ZC-8QM"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NGG-lE-yyx">
+                                        <rect key="frame" x="138" y="0.0" width="69" height="72"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="orangeBall" translatesAutoresizingMaskIntoConstraints="NO" id="YLn-vS-3d4">
+                                                <rect key="frame" x="0.0" y="0.0" width="69.5" height="69"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="69" id="BMf-bw-nEF"/>
+                                                    <constraint firstAttribute="height" constant="69" id="Jd5-Jz-wd5"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7V-pW-FiC">
+                                                <rect key="frame" x="13" y="24" width="41.5" height="21"/>
+                                                <fontDescription key="fontDescription" name="Sansita-ExtraBoldItalic" family="Sansita" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="YLn-vS-3d4" firstAttribute="centerX" secondItem="NGG-lE-yyx" secondAttribute="centerX" id="1cF-2z-YG8"/>
+                                            <constraint firstItem="D7V-pW-FiC" firstAttribute="centerY" secondItem="NGG-lE-yyx" secondAttribute="centerY" id="9vR-cu-mQP"/>
+                                            <constraint firstItem="YLn-vS-3d4" firstAttribute="centerY" secondItem="NGG-lE-yyx" secondAttribute="centerY" id="IDW-Sv-PEB"/>
+                                            <constraint firstItem="D7V-pW-FiC" firstAttribute="centerX" secondItem="NGG-lE-yyx" secondAttribute="centerX" id="eIg-bC-Pto"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gob-x9-07i">
+                                        <rect key="frame" x="207" y="0.0" width="69" height="72"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="orangeBall" translatesAutoresizingMaskIntoConstraints="NO" id="yyr-x0-P7q">
+                                                <rect key="frame" x="0.0" y="0.0" width="69.5" height="69"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="69" id="3hf-Zb-7nu"/>
+                                                    <constraint firstAttribute="width" constant="69" id="brW-l6-QA4"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBC-ZT-ppw">
+                                                <rect key="frame" x="13" y="24" width="41.5" height="21"/>
+                                                <fontDescription key="fontDescription" name="Sansita-ExtraBoldItalic" family="Sansita" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="lBC-ZT-ppw" firstAttribute="centerY" secondItem="Gob-x9-07i" secondAttribute="centerY" id="Jyw-es-abn"/>
+                                            <constraint firstItem="lBC-ZT-ppw" firstAttribute="centerX" secondItem="Gob-x9-07i" secondAttribute="centerX" id="Pb7-7E-IMW"/>
+                                            <constraint firstItem="yyr-x0-P7q" firstAttribute="centerY" secondItem="Gob-x9-07i" secondAttribute="centerY" id="UIa-Jv-OIA"/>
+                                            <constraint firstItem="yyr-x0-P7q" firstAttribute="centerX" secondItem="Gob-x9-07i" secondAttribute="centerX" id="y0k-ra-CFj"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O5C-5x-LP8">
+                                        <rect key="frame" x="276" y="0.0" width="69" height="72"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="orangeBall" translatesAutoresizingMaskIntoConstraints="NO" id="3xt-H1-bdJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="69.5" height="69"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="69" id="wX3-rH-D6L"/>
+                                                    <constraint firstAttribute="height" constant="69" id="wZy-j6-6g3"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhc-Oq-4Xc">
+                                                <rect key="frame" x="13" y="24" width="41.5" height="21"/>
+                                                <fontDescription key="fontDescription" name="Sansita-ExtraBoldItalic" family="Sansita" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="3xt-H1-bdJ" firstAttribute="centerY" secondItem="O5C-5x-LP8" secondAttribute="centerY" id="5mK-Vy-BMo"/>
+                                            <constraint firstItem="3xt-H1-bdJ" firstAttribute="centerX" secondItem="O5C-5x-LP8" secondAttribute="centerX" id="OCZ-tx-I20"/>
+                                            <constraint firstItem="yhc-Oq-4Xc" firstAttribute="centerY" secondItem="O5C-5x-LP8" secondAttribute="centerY" id="R4u-33-a8A"/>
+                                            <constraint firstItem="yhc-Oq-4Xc" firstAttribute="centerX" secondItem="O5C-5x-LP8" secondAttribute="centerX" id="pte-UD-cp8"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6iF-R7-SEM">
+                                        <rect key="frame" x="345" y="0.0" width="69" height="72"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="orangeBall" translatesAutoresizingMaskIntoConstraints="NO" id="GsD-6O-gpX">
+                                                <rect key="frame" x="0.0" y="0.0" width="69.5" height="69"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="69" id="4yC-uw-fsT"/>
+                                                    <constraint firstAttribute="width" constant="69" id="w5T-Ug-k5V"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfG-9e-DRO">
+                                                <rect key="frame" x="13" y="24" width="41.5" height="21"/>
+                                                <fontDescription key="fontDescription" name="Sansita-ExtraBoldItalic" family="Sansita" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="GsD-6O-gpX" firstAttribute="centerX" secondItem="6iF-R7-SEM" secondAttribute="centerX" id="3y5-rr-xIZ"/>
+                                            <constraint firstItem="GsD-6O-gpX" firstAttribute="centerY" secondItem="6iF-R7-SEM" secondAttribute="centerY" id="68f-e9-pd1"/>
+                                            <constraint firstItem="OfG-9e-DRO" firstAttribute="centerY" secondItem="6iF-R7-SEM" secondAttribute="centerY" id="NWC-MT-GB1"/>
+                                            <constraint firstItem="OfG-9e-DRO" firstAttribute="centerX" secondItem="6iF-R7-SEM" secondAttribute="centerX" id="vSF-on-8Bp"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Auf-te-ZjB">
+                                <rect key="frame" x="187" y="384.5" width="227" height="37"/>
+                                <fontDescription key="fontDescription" name="Sansita-ExtraBoldItalic" family="Sansita" pointSize="20"/>
+                                <state key="normal" title="Check For Winning Ticket">
+                                    <color key="titleColor" red="0.1081928454" green="0.0" blue="0.73763877470000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="winAction:" destination="fhA-Tf-tbZ" eventType="touchUpInside" id="nh7-Dq-Jsv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czl-8L-63o">
+                                <rect key="frame" x="239" y="176" width="123.5" height="25.5"/>
+                                <fontDescription key="fontDescription" name="Sansita-ExtraBoldItalic" family="Sansita" pointSize="21"/>
+                                <color key="textColor" red="0.1081928454" green="0.0" blue="0.73763877470000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Auf-te-ZjB" firstAttribute="top" secondItem="YLn-vS-3d4" secondAttribute="bottom" constant="54" id="6C4-sc-WyN"/>
+                            <constraint firstItem="DgS-v6-vfB" firstAttribute="centerY" secondItem="oxu-mj-d1o" secondAttribute="centerY" id="Gw7-Z2-Gua"/>
+                            <constraint firstItem="Auf-te-ZjB" firstAttribute="centerX" secondItem="oxu-mj-d1o" secondAttribute="centerX" id="JfD-Av-dGf"/>
+                            <constraint firstItem="Czl-8L-63o" firstAttribute="centerX" secondItem="oxu-mj-d1o" secondAttribute="centerX" id="isS-yq-33c"/>
+                            <constraint firstItem="DgS-v6-vfB" firstAttribute="centerX" secondItem="oxu-mj-d1o" secondAttribute="centerX" id="m3E-lb-oNj"/>
+                            <constraint firstItem="Czl-8L-63o" firstAttribute="top" secondItem="ttr-O9-EOX" secondAttribute="bottom" constant="112" id="sM4-fv-IXy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ball1" destination="PZA-BT-opJ" id="wV1-lA-1gM"/>
+                        <outlet property="ball2" destination="YHY-uG-yEH" id="Y2a-XQ-de7"/>
+                        <outlet property="ball3" destination="D7V-pW-FiC" id="8Uu-hV-4WA"/>
+                        <outlet property="ball4" destination="lBC-ZT-ppw" id="ymR-LT-CZR"/>
+                        <outlet property="ball5" destination="yhc-Oq-4Xc" id="Kc0-bk-qVt"/>
+                        <outlet property="ball6" destination="OfG-9e-DRO" id="aIr-K9-WyN"/>
+                        <outlet property="didWin" destination="Czl-8L-63o" id="d1L-vK-4x1"/>
+                        <outlet property="winButton" destination="Auf-te-ZjB" id="TfF-zo-PAu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vpw-Dd-12F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2644" y="-349"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lbK-vN-Q9U">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i18-fB-egj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vlu-qV-UsJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZoQ-zx-TbK" kind="relationship" relationship="rootViewController" id="Ov5-3D-Cwu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dDH-5j-Eu4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1119" y="-378"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="orangeBall" width="400" height="400"/>
+    </resources>
+</document>
