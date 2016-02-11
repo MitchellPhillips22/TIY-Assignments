@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wKs-Ym-W0j">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58X-2W-oP6" customClass="BorderButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
+                                        <state key="normal" title="1">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIP-ET-Aav" customClass="BorderButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
+                                        <state key="normal" title="2">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaC-hx-gY3" customClass="BorderButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
+                                        <state key="normal" title="3">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPJ-nc-lra" customClass="BorderButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
+                                        <state key="normal" title="4">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgd-bh-EmN" customClass="BorderButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
+                                        <state key="normal" title="5">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyw-ZZ-Lbo" customClass="BorderButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
+                                        <state key="normal" title="6">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TC7-LY-RhJ" customClass="BorderButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
+                                        <state key="normal" title="7">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uad-qw-A7u" customClass="BorderButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
+                                        <state key="normal" title="8">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgO-zc-rYL" customClass="BorderButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
+                                        <state key="normal" title="9">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0v-ao-MuO" customClass="BorderButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
+                                        <state key="normal" title="0">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASA-bu-UTh" customClass="BorderButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
+                                        <state key="normal" title="( )">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsy-tY-kgi" customClass="BorderButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" red="0.36325555100000001" green="0.9594726562" blue="0.95489823190000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
+                                        <state key="normal" title="=">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANs-WE-rDC" customClass="BorderButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
+                                        <state key="normal" title=".">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2x2-Y5-uav" customClass="BorderButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.58596319901315785" blue="0.22121710530000011" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZS-YI-qwo" customClass="BorderButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" red="0.0038291529609999998" green="0.0" blue="0.0" alpha="0.19" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tv2-54-ojz" customClass="BorderButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" red="0.0038291529609999998" green="0.0" blue="0.0" alpha="0.19" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
+                                        <state key="normal" title="-">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIA-48-NGG" customClass="BorderButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" red="0.0038291529609999998" green="0.0" blue="0.0" alpha="0.19" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
+                                        <state key="normal" title="%">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoG-8i-coH" customClass="BorderButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" red="0.0038291529609999998" green="0.0" blue="0.0" alpha="0.19" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
+                                        <state key="normal" title="/">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25N-1k-Il8" customClass="BorderButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
+                                        <state key="normal" title="&lt;=">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfd-cC-5em" customClass="BorderButton" customModule="Calculator" customModuleProvider="target">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <color key="backgroundColor" red="0.0038291529605263158" green="0.0" blue="0.0" alpha="0.19" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
+                                        <state key="normal" title="x">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="hfd-cC-5em" firstAttribute="height" secondItem="R0v-ao-MuO" secondAttribute="height" id="0Nd-GU-PEm"/>
+                                    <constraint firstItem="ASA-bu-UTh" firstAttribute="top" secondItem="NaC-hx-gY3" secondAttribute="bottom" constant="20" id="0zv-QL-CDU"/>
+                                    <constraint firstItem="58X-2W-oP6" firstAttribute="top" secondItem="sPJ-nc-lra" secondAttribute="bottom" constant="20" id="17u-VH-KFq"/>
+                                    <constraint firstItem="25N-1k-Il8" firstAttribute="leading" secondItem="HoG-8i-coH" secondAttribute="trailing" constant="19" id="1Op-WX-DhR"/>
+                                    <constraint firstItem="TC7-LY-RhJ" firstAttribute="leading" secondItem="wKs-Ym-W0j" secondAttribute="leading" constant="8" id="1Ox-cQ-84w"/>
+                                    <constraint firstItem="eyw-ZZ-Lbo" firstAttribute="width" secondItem="R0v-ao-MuO" secondAttribute="width" id="1mf-fS-l3F"/>
+                                    <constraint firstItem="LgO-zc-rYL" firstAttribute="leading" secondItem="Uad-qw-A7u" secondAttribute="trailing" constant="22" id="2Xp-YS-gW2"/>
+                                    <constraint firstItem="nIP-ET-Aav" firstAttribute="top" secondItem="bgd-bh-EmN" secondAttribute="bottom" constant="20" id="2bn-uY-qhb"/>
+                                    <constraint firstItem="LgO-zc-rYL" firstAttribute="width" secondItem="R0v-ao-MuO" secondAttribute="width" id="2m0-ks-h8F"/>
+                                    <constraint firstItem="hfd-cC-5em" firstAttribute="width" secondItem="R0v-ao-MuO" secondAttribute="width" id="38J-eb-src"/>
+                                    <constraint firstItem="bgd-bh-EmN" firstAttribute="top" secondItem="Uad-qw-A7u" secondAttribute="bottom" constant="20" id="3R6-Ax-c8c"/>
+                                    <constraint firstItem="NaC-hx-gY3" firstAttribute="leading" secondItem="nIP-ET-Aav" secondAttribute="trailing" constant="22" id="3iA-qn-0xb"/>
+                                    <constraint firstItem="uIA-48-NGG" firstAttribute="leading" secondItem="LgO-zc-rYL" secondAttribute="trailing" constant="19" id="5wv-aL-UYp"/>
+                                    <constraint firstItem="2x2-Y5-uav" firstAttribute="width" secondItem="R0v-ao-MuO" secondAttribute="width" id="6tk-dy-H2z"/>
+                                    <constraint firstItem="Uad-qw-A7u" firstAttribute="height" secondItem="R0v-ao-MuO" secondAttribute="height" id="6vq-7g-QAz"/>
+                                    <constraint firstItem="25N-1k-Il8" firstAttribute="leading" secondItem="HoG-8i-coH" secondAttribute="trailing" constant="19" id="9EE-2Y-ZYq"/>
+                                    <constraint firstItem="R0v-ao-MuO" firstAttribute="leading" secondItem="wKs-Ym-W0j" secondAttribute="leading" constant="8" id="A7m-wm-4kG"/>
+                                    <constraint firstItem="uIA-48-NGG" firstAttribute="leading" secondItem="LgO-zc-rYL" secondAttribute="trailing" constant="19" id="Adc-UM-pTI"/>
+                                    <constraint firstItem="58X-2W-oP6" firstAttribute="width" secondItem="R0v-ao-MuO" secondAttribute="width" id="Amh-34-dv0"/>
+                                    <constraint firstItem="25N-1k-Il8" firstAttribute="leading" secondItem="HoG-8i-coH" secondAttribute="trailing" constant="19" id="Anc-RW-FtF"/>
+                                    <constraint firstItem="eyw-ZZ-Lbo" firstAttribute="width" secondItem="bgd-bh-EmN" secondAttribute="width" id="AoR-sS-4Pv"/>
+                                    <constraint firstItem="Uad-qw-A7u" firstAttribute="top" secondItem="hfd-cC-5em" secondAttribute="bottom" constant="20" id="BVA-2T-wYu"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bsy-tY-kgi" secondAttribute="trailing" constant="8" id="BtN-Qs-NEq"/>
+                                    <constraint firstItem="Tv2-54-ojz" firstAttribute="height" secondItem="R0v-ao-MuO" secondAttribute="height" id="CLf-8G-6It"/>
+                                    <constraint firstItem="Bsy-tY-kgi" firstAttribute="top" secondItem="dZS-YI-qwo" secondAttribute="bottom" constant="20" id="CYj-sO-cYZ"/>
+                                    <constraint firstItem="TC7-LY-RhJ" firstAttribute="top" secondItem="2x2-Y5-uav" secondAttribute="bottom" constant="20" id="Cdj-TA-Lcv"/>
+                                    <constraint firstItem="Tv2-54-ojz" firstAttribute="top" secondItem="uIA-48-NGG" secondAttribute="bottom" constant="20" id="CgN-4E-xIK"/>
+                                    <constraint firstItem="HoG-8i-coH" firstAttribute="leading" secondItem="hfd-cC-5em" secondAttribute="trailing" constant="22" id="Ctf-AT-GLo"/>
+                                    <constraint firstItem="HoG-8i-coH" firstAttribute="width" secondItem="hfd-cC-5em" secondAttribute="width" id="GdE-Hg-MCY"/>
+                                    <constraint firstItem="Uad-qw-A7u" firstAttribute="width" secondItem="R0v-ao-MuO" secondAttribute="width" id="HIg-Vs-jUg"/>
+                                    <constraint firstItem="HoG-8i-coH" firstAttribute="height" secondItem="hfd-cC-5em" secondAttribute="height" id="Hhu-Qy-A3o"/>
+                                    <constraint firstItem="NaC-hx-gY3" firstAttribute="height" secondItem="nIP-ET-Aav" secondAttribute="height" id="IcI-HU-xiO"/>
+                                    <constraint firstAttribute="bottom" secondItem="Bsy-tY-kgi" secondAttribute="bottom" constant="8" id="Iqg-Jv-03z"/>
+                                    <constraint firstItem="dZS-YI-qwo" firstAttribute="height" secondItem="R0v-ao-MuO" secondAttribute="height" id="J1s-MH-mfk"/>
+                                    <constraint firstItem="Uad-qw-A7u" firstAttribute="leading" secondItem="TC7-LY-RhJ" secondAttribute="trailing" constant="23" id="JLF-3J-SJJ"/>
+                                    <constraint firstItem="Tv2-54-ojz" firstAttribute="leading" secondItem="eyw-ZZ-Lbo" secondAttribute="trailing" constant="19" id="Jez-3P-IwP"/>
+                                    <constraint firstItem="Bsy-tY-kgi" firstAttribute="width" secondItem="R0v-ao-MuO" secondAttribute="width" id="KyA-no-YoY"/>
+                                    <constraint firstItem="R0v-ao-MuO" firstAttribute="top" secondItem="58X-2W-oP6" secondAttribute="bottom" constant="20" id="LOO-kI-0h9"/>
+                                    <constraint firstItem="2x2-Y5-uav" firstAttribute="height" secondItem="R0v-ao-MuO" secondAttribute="height" id="Ldp-0m-LMT"/>
+                                    <constraint firstItem="sPJ-nc-lra" firstAttribute="width" secondItem="R0v-ao-MuO" secondAttribute="width" id="MH2-TK-Uah"/>
+                                    <constraint firstItem="dZS-YI-qwo" firstAttribute="width" secondItem="R0v-ao-MuO" secondAttribute="width" id="MLa-S0-BGc"/>
+                                    <constraint firstItem="ASA-bu-UTh" firstAttribute="leading" secondItem="ANs-WE-rDC" secondAttribute="trailing" constant="22" id="NJ7-tr-ZTz"/>
+                                    <constraint firstItem="bgd-bh-EmN" firstAttribute="height" secondItem="R0v-ao-MuO" secondAttribute="height" id="NyR-pG-fqa"/>
+                                    <constraint firstItem="eyw-ZZ-Lbo" firstAttribute="leading" secondItem="bgd-bh-EmN" secondAttribute="trailing" constant="22" id="O4w-D7-kSR"/>
+                                    <constraint firstItem="Tv2-54-ojz" firstAttribute="width" secondItem="R0v-ao-MuO" secondAttribute="width" id="OJr-XT-E2c"/>
+                                    <constraint firstItem="LgO-zc-rYL" firstAttribute="height" secondItem="R0v-ao-MuO" secondAttribute="height" id="Oda-ZG-gx6"/>
+                                    <constraint firstItem="LgO-zc-rYL" firstAttribute="width" secondItem="Uad-qw-A7u" secondAttribute="width" id="PgA-n6-HZ7"/>
+                                    <constraint firstItem="NaC-hx-gY3" firstAttribute="width" secondItem="nIP-ET-Aav" secondAttribute="width" id="Qnr-0B-HPw"/>
+                                    <constraint firstItem="TC7-LY-RhJ" firstAttribute="width" secondItem="R0v-ao-MuO" secondAttribute="width" id="QwV-FH-gzu"/>
+                                    <constraint firstItem="eyw-ZZ-Lbo" firstAttribute="height" secondItem="bgd-bh-EmN" secondAttribute="height" id="RgF-KO-MG2"/>
+                                    <constraint firstItem="NaC-hx-gY3" firstAttribute="leading" secondItem="nIP-ET-Aav" secondAttribute="trailing" constant="22" id="SOZ-m3-6Fb"/>
+                                    <constraint firstItem="sPJ-nc-lra" firstAttribute="height" secondItem="R0v-ao-MuO" secondAttribute="height" id="TKN-mH-WJl"/>
+                                    <constraint firstAttribute="bottom" secondItem="R0v-ao-MuO" secondAttribute="bottom" constant="8" id="TQs-4r-3At"/>
+                                    <constraint firstItem="nIP-ET-Aav" firstAttribute="height" secondItem="R0v-ao-MuO" secondAttribute="height" id="TVz-y8-OzH"/>
+                                    <constraint firstItem="Bsy-tY-kgi" firstAttribute="height" secondItem="R0v-ao-MuO" secondAttribute="height" id="Vfh-BX-mXk"/>
+                                    <constraint firstItem="Tv2-54-ojz" firstAttribute="leading" secondItem="eyw-ZZ-Lbo" secondAttribute="trailing" constant="19" id="Vni-AR-Jal"/>
+                                    <constraint firstItem="ANs-WE-rDC" firstAttribute="leading" secondItem="R0v-ao-MuO" secondAttribute="trailing" constant="23" id="W1I-QG-dRv"/>
+                                    <constraint firstItem="HoG-8i-coH" firstAttribute="leading" secondItem="hfd-cC-5em" secondAttribute="trailing" constant="22" id="W1u-8P-XFX"/>
+                                    <constraint firstAttribute="bottom" secondItem="ANs-WE-rDC" secondAttribute="bottom" constant="8" id="X40-TK-r05"/>
+                                    <constraint firstItem="hfd-cC-5em" firstAttribute="leading" secondItem="2x2-Y5-uav" secondAttribute="trailing" constant="23" id="XDM-8g-wPX"/>
+                                    <constraint firstItem="uIA-48-NGG" firstAttribute="top" secondItem="25N-1k-Il8" secondAttribute="bottom" constant="20" id="XLO-i7-3m9"/>
+                                    <constraint firstItem="HoG-8i-coH" firstAttribute="leading" secondItem="hfd-cC-5em" secondAttribute="trailing" constant="22" id="XaC-K2-OvR"/>
+                                    <constraint firstItem="uIA-48-NGG" firstAttribute="height" secondItem="R0v-ao-MuO" secondAttribute="height" id="Xra-LJ-udU"/>
+                                    <constraint firstItem="eyw-ZZ-Lbo" firstAttribute="leading" secondItem="bgd-bh-EmN" secondAttribute="trailing" constant="22" id="YCw-m3-yGD"/>
+                                    <constraint firstItem="LgO-zc-rYL" firstAttribute="leading" secondItem="Uad-qw-A7u" secondAttribute="trailing" constant="22" id="YEq-9K-Vrn"/>
+                                    <constraint firstItem="25N-1k-Il8" firstAttribute="leading" secondItem="HoG-8i-coH" secondAttribute="trailing" constant="19" id="YnF-3N-xQO"/>
+                                    <constraint firstItem="ANs-WE-rDC" firstAttribute="height" secondItem="R0v-ao-MuO" secondAttribute="height" id="Z54-7A-4aG"/>
+                                    <constraint firstItem="ANs-WE-rDC" firstAttribute="top" secondItem="nIP-ET-Aav" secondAttribute="bottom" constant="20" id="aew-uV-DkZ"/>
+                                    <constraint firstItem="58X-2W-oP6" firstAttribute="height" secondItem="R0v-ao-MuO" secondAttribute="height" id="cnA-gh-jX7"/>
+                                    <constraint firstItem="ANs-WE-rDC" firstAttribute="width" secondItem="R0v-ao-MuO" secondAttribute="width" id="cr0-Ef-O6A"/>
+                                    <constraint firstItem="LgO-zc-rYL" firstAttribute="top" secondItem="HoG-8i-coH" secondAttribute="bottom" constant="20" id="dhb-Zg-Mnn"/>
+                                    <constraint firstItem="uIA-48-NGG" firstAttribute="leading" secondItem="LgO-zc-rYL" secondAttribute="trailing" constant="19" id="dql-fT-w57"/>
+                                    <constraint firstItem="ASA-bu-UTh" firstAttribute="width" secondItem="ANs-WE-rDC" secondAttribute="width" id="f7U-18-agq"/>
+                                    <constraint firstItem="eyw-ZZ-Lbo" firstAttribute="top" secondItem="LgO-zc-rYL" secondAttribute="bottom" constant="20" id="gG4-7S-Kz0"/>
+                                    <constraint firstItem="25N-1k-Il8" firstAttribute="height" secondItem="R0v-ao-MuO" secondAttribute="height" id="gHY-Hl-Cxs"/>
+                                    <constraint firstItem="HoG-8i-coH" firstAttribute="width" secondItem="R0v-ao-MuO" secondAttribute="width" id="gpH-mv-viV"/>
+                                    <constraint firstItem="ASA-bu-UTh" firstAttribute="height" secondItem="ANs-WE-rDC" secondAttribute="height" id="gvj-6w-zhw"/>
+                                    <constraint firstItem="uIA-48-NGG" firstAttribute="width" secondItem="R0v-ao-MuO" secondAttribute="width" id="hFt-Cy-HKQ"/>
+                                    <constraint firstItem="sPJ-nc-lra" firstAttribute="leading" secondItem="wKs-Ym-W0j" secondAttribute="leading" constant="8" id="hTf-og-zpN"/>
+                                    <constraint firstItem="HoG-8i-coH" firstAttribute="leading" secondItem="hfd-cC-5em" secondAttribute="trailing" constant="22" id="iTL-um-5Yz"/>
+                                    <constraint firstItem="eyw-ZZ-Lbo" firstAttribute="leading" secondItem="bgd-bh-EmN" secondAttribute="trailing" constant="22" id="iaI-95-n8e"/>
+                                    <constraint firstItem="TC7-LY-RhJ" firstAttribute="height" secondItem="R0v-ao-MuO" secondAttribute="height" id="ioy-TO-bHw"/>
+                                    <constraint firstItem="LgO-zc-rYL" firstAttribute="leading" secondItem="Uad-qw-A7u" secondAttribute="trailing" constant="22" id="kIF-Tx-cGZ"/>
+                                    <constraint firstItem="nIP-ET-Aav" firstAttribute="leading" secondItem="58X-2W-oP6" secondAttribute="trailing" constant="23" id="mVr-1m-Wpd"/>
+                                    <constraint firstItem="R0v-ao-MuO" firstAttribute="width" secondItem="wKs-Ym-W0j" secondAttribute="width" multiplier="0.2" id="o9d-h5-8Pw"/>
+                                    <constraint firstItem="dZS-YI-qwo" firstAttribute="leading" secondItem="NaC-hx-gY3" secondAttribute="trailing" constant="19" id="oPi-zk-5gi"/>
+                                    <constraint firstItem="NaC-hx-gY3" firstAttribute="width" secondItem="R0v-ao-MuO" secondAttribute="width" id="otB-Xb-0Zc"/>
+                                    <constraint firstItem="bgd-bh-EmN" firstAttribute="width" secondItem="R0v-ao-MuO" secondAttribute="width" id="p45-Ub-KfZ"/>
+                                    <constraint firstItem="NaC-hx-gY3" firstAttribute="height" secondItem="R0v-ao-MuO" secondAttribute="height" id="pWj-EF-kkh"/>
+                                    <constraint firstItem="HoG-8i-coH" firstAttribute="leading" secondItem="hfd-cC-5em" secondAttribute="trailing" constant="22" id="pqP-j0-WD3"/>
+                                    <constraint firstItem="bgd-bh-EmN" firstAttribute="leading" secondItem="sPJ-nc-lra" secondAttribute="trailing" constant="23" id="q3K-C4-gcf"/>
+                                    <constraint firstItem="dZS-YI-qwo" firstAttribute="top" secondItem="Tv2-54-ojz" secondAttribute="bottom" constant="20" id="qRi-tz-fvf"/>
+                                    <constraint firstItem="nIP-ET-Aav" firstAttribute="width" secondItem="R0v-ao-MuO" secondAttribute="width" id="rzN-jb-Yz1"/>
+                                    <constraint firstItem="eyw-ZZ-Lbo" firstAttribute="height" secondItem="R0v-ao-MuO" secondAttribute="height" id="ssM-7O-FlY"/>
+                                    <constraint firstItem="sPJ-nc-lra" firstAttribute="top" secondItem="TC7-LY-RhJ" secondAttribute="bottom" constant="20" id="u5t-Jk-PE2"/>
+                                    <constraint firstItem="LgO-zc-rYL" firstAttribute="height" secondItem="Uad-qw-A7u" secondAttribute="height" id="uCK-bY-Xgj"/>
+                                    <constraint firstAttribute="bottom" secondItem="ASA-bu-UTh" secondAttribute="bottom" constant="8" id="uSb-Oe-ZrL"/>
+                                    <constraint firstItem="58X-2W-oP6" firstAttribute="leading" secondItem="wKs-Ym-W0j" secondAttribute="leading" constant="8" id="vEE-P9-zSg"/>
+                                    <constraint firstItem="NaC-hx-gY3" firstAttribute="top" secondItem="eyw-ZZ-Lbo" secondAttribute="bottom" constant="20" id="vhW-gO-3rT"/>
+                                    <constraint firstItem="R0v-ao-MuO" firstAttribute="height" secondItem="wKs-Ym-W0j" secondAttribute="height" multiplier="0.16" id="waf-ph-frp"/>
+                                    <constraint firstItem="LgO-zc-rYL" firstAttribute="leading" secondItem="Uad-qw-A7u" secondAttribute="trailing" constant="22" id="xWM-yW-b5u"/>
+                                    <constraint firstItem="25N-1k-Il8" firstAttribute="width" secondItem="R0v-ao-MuO" secondAttribute="width" id="xgo-kA-iuA"/>
+                                    <constraint firstItem="HoG-8i-coH" firstAttribute="height" secondItem="R0v-ao-MuO" secondAttribute="height" id="xzK-jv-P5F"/>
+                                    <constraint firstItem="2x2-Y5-uav" firstAttribute="leading" secondItem="wKs-Ym-W0j" secondAttribute="leading" constant="8" id="znm-uF-SBT"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="58X-2W-oP6"/>
+                                        <exclude reference="nIP-ET-Aav"/>
+                                        <exclude reference="NaC-hx-gY3"/>
+                                        <exclude reference="sPJ-nc-lra"/>
+                                        <exclude reference="bgd-bh-EmN"/>
+                                        <exclude reference="eyw-ZZ-Lbo"/>
+                                        <exclude reference="TC7-LY-RhJ"/>
+                                        <exclude reference="Uad-qw-A7u"/>
+                                        <exclude reference="LgO-zc-rYL"/>
+                                        <exclude reference="R0v-ao-MuO"/>
+                                        <exclude reference="ASA-bu-UTh"/>
+                                        <exclude reference="Bsy-tY-kgi"/>
+                                        <exclude reference="ANs-WE-rDC"/>
+                                        <exclude reference="2x2-Y5-uav"/>
+                                        <exclude reference="dZS-YI-qwo"/>
+                                        <exclude reference="Tv2-54-ojz"/>
+                                        <exclude reference="uIA-48-NGG"/>
+                                        <exclude reference="HoG-8i-coH"/>
+                                        <exclude reference="25N-1k-Il8"/>
+                                        <exclude reference="hfd-cC-5em"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="1Op-WX-DhR"/>
+                                        <exclude reference="9EE-2Y-ZYq"/>
+                                        <exclude reference="Anc-RW-FtF"/>
+                                        <exclude reference="YnF-3N-xQO"/>
+                                        <exclude reference="gHY-Hl-Cxs"/>
+                                        <exclude reference="xgo-kA-iuA"/>
+                                        <exclude reference="6tk-dy-H2z"/>
+                                        <exclude reference="Ldp-0m-LMT"/>
+                                        <exclude reference="znm-uF-SBT"/>
+                                        <exclude reference="17u-VH-KFq"/>
+                                        <exclude reference="Amh-34-dv0"/>
+                                        <exclude reference="cnA-gh-jX7"/>
+                                        <exclude reference="vEE-P9-zSg"/>
+                                        <exclude reference="W1I-QG-dRv"/>
+                                        <exclude reference="X40-TK-r05"/>
+                                        <exclude reference="Z54-7A-4aG"/>
+                                        <exclude reference="aew-uV-DkZ"/>
+                                        <exclude reference="cr0-Ef-O6A"/>
+                                        <exclude reference="0zv-QL-CDU"/>
+                                        <exclude reference="NJ7-tr-ZTz"/>
+                                        <exclude reference="f7U-18-agq"/>
+                                        <exclude reference="gvj-6w-zhw"/>
+                                        <exclude reference="uSb-Oe-ZrL"/>
+                                        <exclude reference="BtN-Qs-NEq"/>
+                                        <exclude reference="CYj-sO-cYZ"/>
+                                        <exclude reference="Iqg-Jv-03z"/>
+                                        <exclude reference="KyA-no-YoY"/>
+                                        <exclude reference="Vfh-BX-mXk"/>
+                                        <exclude reference="Ctf-AT-GLo"/>
+                                        <exclude reference="GdE-Hg-MCY"/>
+                                        <exclude reference="Hhu-Qy-A3o"/>
+                                        <exclude reference="W1u-8P-XFX"/>
+                                        <exclude reference="XaC-K2-OvR"/>
+                                        <exclude reference="gpH-mv-viV"/>
+                                        <exclude reference="iTL-um-5Yz"/>
+                                        <exclude reference="pqP-j0-WD3"/>
+                                        <exclude reference="xzK-jv-P5F"/>
+                                        <exclude reference="2Xp-YS-gW2"/>
+                                        <exclude reference="2m0-ks-h8F"/>
+                                        <exclude reference="Oda-ZG-gx6"/>
+                                        <exclude reference="PgA-n6-HZ7"/>
+                                        <exclude reference="YEq-9K-Vrn"/>
+                                        <exclude reference="dhb-Zg-Mnn"/>
+                                        <exclude reference="kIF-Tx-cGZ"/>
+                                        <exclude reference="uCK-bY-Xgj"/>
+                                        <exclude reference="xWM-yW-b5u"/>
+                                        <exclude reference="3iA-qn-0xb"/>
+                                        <exclude reference="IcI-HU-xiO"/>
+                                        <exclude reference="Qnr-0B-HPw"/>
+                                        <exclude reference="SOZ-m3-6Fb"/>
+                                        <exclude reference="otB-Xb-0Zc"/>
+                                        <exclude reference="pWj-EF-kkh"/>
+                                        <exclude reference="vhW-gO-3rT"/>
+                                        <exclude reference="A7m-wm-4kG"/>
+                                        <exclude reference="LOO-kI-0h9"/>
+                                        <exclude reference="TQs-4r-3At"/>
+                                        <exclude reference="o9d-h5-8Pw"/>
+                                        <exclude reference="waf-ph-frp"/>
+                                        <exclude reference="1Ox-cQ-84w"/>
+                                        <exclude reference="Cdj-TA-Lcv"/>
+                                        <exclude reference="QwV-FH-gzu"/>
+                                        <exclude reference="ioy-TO-bHw"/>
+                                        <exclude reference="CLf-8G-6It"/>
+                                        <exclude reference="CgN-4E-xIK"/>
+                                        <exclude reference="Jez-3P-IwP"/>
+                                        <exclude reference="OJr-XT-E2c"/>
+                                        <exclude reference="Vni-AR-Jal"/>
+                                        <exclude reference="6vq-7g-QAz"/>
+                                        <exclude reference="BVA-2T-wYu"/>
+                                        <exclude reference="HIg-Vs-jUg"/>
+                                        <exclude reference="JLF-3J-SJJ"/>
+                                        <exclude reference="3R6-Ax-c8c"/>
+                                        <exclude reference="NyR-pG-fqa"/>
+                                        <exclude reference="p45-Ub-KfZ"/>
+                                        <exclude reference="q3K-C4-gcf"/>
+                                        <exclude reference="J1s-MH-mfk"/>
+                                        <exclude reference="MLa-S0-BGc"/>
+                                        <exclude reference="oPi-zk-5gi"/>
+                                        <exclude reference="qRi-tz-fvf"/>
+                                        <exclude reference="1mf-fS-l3F"/>
+                                        <exclude reference="AoR-sS-4Pv"/>
+                                        <exclude reference="O4w-D7-kSR"/>
+                                        <exclude reference="RgF-KO-MG2"/>
+                                        <exclude reference="YCw-m3-yGD"/>
+                                        <exclude reference="gG4-7S-Kz0"/>
+                                        <exclude reference="iaI-95-n8e"/>
+                                        <exclude reference="ssM-7O-FlY"/>
+                                        <exclude reference="0Nd-GU-PEm"/>
+                                        <exclude reference="38J-eb-src"/>
+                                        <exclude reference="XDM-8g-wPX"/>
+                                        <exclude reference="2bn-uY-qhb"/>
+                                        <exclude reference="TVz-y8-OzH"/>
+                                        <exclude reference="mVr-1m-Wpd"/>
+                                        <exclude reference="rzN-jb-Yz1"/>
+                                        <exclude reference="MH2-TK-Uah"/>
+                                        <exclude reference="TKN-mH-WJl"/>
+                                        <exclude reference="hTf-og-zpN"/>
+                                        <exclude reference="u5t-Jk-PE2"/>
+                                        <exclude reference="5wv-aL-UYp"/>
+                                        <exclude reference="Adc-UM-pTI"/>
+                                        <exclude reference="XLO-i7-3m9"/>
+                                        <exclude reference="Xra-LJ-udU"/>
+                                        <exclude reference="dql-fT-w57"/>
+                                        <exclude reference="hFt-Cy-HKQ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="58X-2W-oP6"/>
+                                        <include reference="nIP-ET-Aav"/>
+                                        <include reference="NaC-hx-gY3"/>
+                                        <include reference="sPJ-nc-lra"/>
+                                        <include reference="bgd-bh-EmN"/>
+                                        <include reference="eyw-ZZ-Lbo"/>
+                                        <include reference="TC7-LY-RhJ"/>
+                                        <include reference="Uad-qw-A7u"/>
+                                        <include reference="LgO-zc-rYL"/>
+                                        <include reference="R0v-ao-MuO"/>
+                                        <include reference="ASA-bu-UTh"/>
+                                        <include reference="Bsy-tY-kgi"/>
+                                        <include reference="ANs-WE-rDC"/>
+                                        <include reference="2x2-Y5-uav"/>
+                                        <include reference="dZS-YI-qwo"/>
+                                        <include reference="Tv2-54-ojz"/>
+                                        <include reference="uIA-48-NGG"/>
+                                        <include reference="HoG-8i-coH"/>
+                                        <include reference="25N-1k-Il8"/>
+                                        <include reference="hfd-cC-5em"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="1Op-WX-DhR"/>
+                                        <include reference="9EE-2Y-ZYq"/>
+                                        <include reference="Anc-RW-FtF"/>
+                                        <include reference="YnF-3N-xQO"/>
+                                        <include reference="gHY-Hl-Cxs"/>
+                                        <include reference="xgo-kA-iuA"/>
+                                        <include reference="6tk-dy-H2z"/>
+                                        <include reference="Ldp-0m-LMT"/>
+                                        <include reference="znm-uF-SBT"/>
+                                        <include reference="17u-VH-KFq"/>
+                                        <include reference="Amh-34-dv0"/>
+                                        <include reference="cnA-gh-jX7"/>
+                                        <include reference="vEE-P9-zSg"/>
+                                        <include reference="W1I-QG-dRv"/>
+                                        <include reference="X40-TK-r05"/>
+                                        <include reference="Z54-7A-4aG"/>
+                                        <include reference="aew-uV-DkZ"/>
+                                        <include reference="cr0-Ef-O6A"/>
+                                        <include reference="0zv-QL-CDU"/>
+                                        <include reference="NJ7-tr-ZTz"/>
+                                        <include reference="f7U-18-agq"/>
+                                        <include reference="gvj-6w-zhw"/>
+                                        <include reference="uSb-Oe-ZrL"/>
+                                        <include reference="BtN-Qs-NEq"/>
+                                        <include reference="CYj-sO-cYZ"/>
+                                        <include reference="Iqg-Jv-03z"/>
+                                        <include reference="KyA-no-YoY"/>
+                                        <include reference="Vfh-BX-mXk"/>
+                                        <include reference="Ctf-AT-GLo"/>
+                                        <include reference="GdE-Hg-MCY"/>
+                                        <include reference="Hhu-Qy-A3o"/>
+                                        <include reference="W1u-8P-XFX"/>
+                                        <include reference="XaC-K2-OvR"/>
+                                        <include reference="gpH-mv-viV"/>
+                                        <include reference="iTL-um-5Yz"/>
+                                        <include reference="pqP-j0-WD3"/>
+                                        <include reference="xzK-jv-P5F"/>
+                                        <include reference="2Xp-YS-gW2"/>
+                                        <include reference="2m0-ks-h8F"/>
+                                        <include reference="Oda-ZG-gx6"/>
+                                        <include reference="PgA-n6-HZ7"/>
+                                        <include reference="YEq-9K-Vrn"/>
+                                        <include reference="dhb-Zg-Mnn"/>
+                                        <include reference="kIF-Tx-cGZ"/>
+                                        <include reference="uCK-bY-Xgj"/>
+                                        <include reference="xWM-yW-b5u"/>
+                                        <include reference="3iA-qn-0xb"/>
+                                        <include reference="IcI-HU-xiO"/>
+                                        <include reference="Qnr-0B-HPw"/>
+                                        <include reference="SOZ-m3-6Fb"/>
+                                        <include reference="otB-Xb-0Zc"/>
+                                        <include reference="pWj-EF-kkh"/>
+                                        <include reference="vhW-gO-3rT"/>
+                                        <include reference="A7m-wm-4kG"/>
+                                        <include reference="LOO-kI-0h9"/>
+                                        <include reference="TQs-4r-3At"/>
+                                        <include reference="o9d-h5-8Pw"/>
+                                        <include reference="waf-ph-frp"/>
+                                        <include reference="1Ox-cQ-84w"/>
+                                        <include reference="Cdj-TA-Lcv"/>
+                                        <include reference="QwV-FH-gzu"/>
+                                        <include reference="ioy-TO-bHw"/>
+                                        <include reference="CLf-8G-6It"/>
+                                        <include reference="CgN-4E-xIK"/>
+                                        <include reference="Jez-3P-IwP"/>
+                                        <include reference="OJr-XT-E2c"/>
+                                        <include reference="Vni-AR-Jal"/>
+                                        <include reference="6vq-7g-QAz"/>
+                                        <include reference="BVA-2T-wYu"/>
+                                        <include reference="HIg-Vs-jUg"/>
+                                        <include reference="JLF-3J-SJJ"/>
+                                        <include reference="3R6-Ax-c8c"/>
+                                        <include reference="NyR-pG-fqa"/>
+                                        <include reference="p45-Ub-KfZ"/>
+                                        <include reference="q3K-C4-gcf"/>
+                                        <include reference="J1s-MH-mfk"/>
+                                        <include reference="MLa-S0-BGc"/>
+                                        <include reference="oPi-zk-5gi"/>
+                                        <include reference="qRi-tz-fvf"/>
+                                        <include reference="1mf-fS-l3F"/>
+                                        <include reference="AoR-sS-4Pv"/>
+                                        <include reference="O4w-D7-kSR"/>
+                                        <include reference="RgF-KO-MG2"/>
+                                        <include reference="YCw-m3-yGD"/>
+                                        <include reference="gG4-7S-Kz0"/>
+                                        <include reference="iaI-95-n8e"/>
+                                        <include reference="ssM-7O-FlY"/>
+                                        <include reference="0Nd-GU-PEm"/>
+                                        <include reference="38J-eb-src"/>
+                                        <include reference="XDM-8g-wPX"/>
+                                        <include reference="2bn-uY-qhb"/>
+                                        <include reference="TVz-y8-OzH"/>
+                                        <include reference="mVr-1m-Wpd"/>
+                                        <include reference="rzN-jb-Yz1"/>
+                                        <include reference="MH2-TK-Uah"/>
+                                        <include reference="TKN-mH-WJl"/>
+                                        <include reference="hTf-og-zpN"/>
+                                        <include reference="u5t-Jk-PE2"/>
+                                        <include reference="5wv-aL-UYp"/>
+                                        <include reference="Adc-UM-pTI"/>
+                                        <include reference="XLO-i7-3m9"/>
+                                        <include reference="Xra-LJ-udU"/>
+                                        <include reference="dql-fT-w57"/>
+                                        <include reference="hFt-Cy-HKQ"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wKs-Ym-W0j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1if-0H-Az5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wKs-Ym-W0j" secondAttribute="bottom" id="VYm-vR-U4H"/>
+                            <constraint firstItem="wKs-Ym-W0j" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="quE-Mm-j0o"/>
+                            <constraint firstItem="wKs-Ym-W0j" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.625" id="uFJ-Y5-Aia"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="wKs-Ym-W0j"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="VYm-vR-U4H"/>
+                                <exclude reference="1if-0H-Az5"/>
+                                <exclude reference="quE-Mm-j0o"/>
+                                <exclude reference="uFJ-Y5-Aia"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="wKs-Ym-W0j"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="VYm-vR-U4H"/>
+                                <include reference="1if-0H-Az5"/>
+                                <include reference="quE-Mm-j0o"/>
+                                <include reference="uFJ-Y5-Aia"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379.5" y="306"/>
+        </scene>
+    </scenes>
+</document>
