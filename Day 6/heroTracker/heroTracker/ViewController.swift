@@ -33,13 +33,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
  
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell")
+
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell")!
+
         
         self.currentHero = self.herosArray[indexPath.row]
         
-        cell!.textLabel?.text = "\(self.currentHero!.name)"
+        if let title = self.currentHero?.name {
+            cell.textLabel?.text = "\(title)"
+        }
+        
         print(currentHero)
-        return cell!
+        
+        return cell
 
         }
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
