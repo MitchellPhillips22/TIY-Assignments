@@ -8,40 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class Calculator {
 
-    @IBOutlet weak var zeroOutlet: BorderButton!
-    @IBOutlet weak var oneOutlet: BorderButton!
-    @IBOutlet weak var twoOutlet: BorderButton!
-    @IBOutlet weak var threeOutlet: BorderButton!
-    @IBOutlet weak var fourOutlet: BorderButton!
-    @IBOutlet weak var fiveOutlet: BorderButton!
-    @IBOutlet weak var sixOutlet: BorderButton!
-    @IBOutlet weak var sevenOutlet: BorderButton!
-    @IBOutlet weak var eightOutlet: BorderButton!
-    @IBOutlet weak var nineOutlet: BorderButton!
-    @IBOutlet weak var decimalOutlet: BorderButton!
-    @IBOutlet weak var equalsOutlet: BorderButton!
-    @IBOutlet weak var parOutlet: BorderButton!
-    @IBOutlet weak var plusOutlet: BorderButton!
-    @IBOutlet weak var minusOutlet: BorderButton!
-    @IBOutlet weak var acOutlet: BorderButton!
-    @IBOutlet weak var divideOutlet: BorderButton!
-    @IBOutlet weak var timesOutlet: BorderButton!
-    @IBOutlet weak var deleteOutlet: BorderButton!
-    @IBOutlet weak var percentOutlet: BorderButton!
+    var value1 = 0
+    var hasTappedNumber = false
+    var hasCalculated = false
+    
+    @IBAction func numberTapped(sender: UIBorderButton) {
+        
+    }
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
+
+
 

@@ -13,6 +13,7 @@
 		1BA674961C6C0C26001E9CB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA674951C6C0C26001E9CB9 /* Assets.xcassets */; };
 		1BA674991C6C0C26001E9CB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA674971C6C0C26001E9CB9 /* LaunchScreen.storyboard */; };
 		1BA674A11C6C0C60001E9CB9 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA674A01C6C0C60001E9CB9 /* BorderButton.swift */; };
+		1BEF0DC31C6E45EA0090DA7E /* CalcBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEF0DC21C6E45EA0090DA7E /* CalcBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1BA674981C6C0C26001E9CB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BA6749A1C6C0C26001E9CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BA674A01C6C0C60001E9CB9 /* BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
+		1BEF0DC21C6E45EA0090DA7E /* CalcBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				1BA6748E1C6C0C26001E9CB9 /* AppDelegate.swift */,
 				1BA674A01C6C0C60001E9CB9 /* BorderButton.swift */,
 				1BA674901C6C0C26001E9CB9 /* ViewController.swift */,
+				1BEF0DC21C6E45EA0090DA7E /* CalcBrain.swift */,
 				1BA674921C6C0C26001E9CB9 /* Main.storyboard */,
 				1BA674951C6C0C26001E9CB9 /* Assets.xcassets */,
 				1BA674971C6C0C26001E9CB9 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BA674911C6C0C26001E9CB9 /* ViewController.swift in Sources */,
+				1BEF0DC31C6E45EA0090DA7E /* CalcBrain.swift in Sources */,
 				1BA6748F1C6C0C26001E9CB9 /* AppDelegate.swift in Sources */,
 				1BA674A11C6C0C60001E9CB9 /* BorderButton.swift in Sources */,
 			);
