@@ -9,13 +9,16 @@
 import Foundation
 
 class StarWarsCharacter {
+    var number: Int = 0
     var name: String = ""
     var affiliation: String = ""
     var description: String = ""
     var image: String = ""
     
     init(dict: JSONDictionary) {
-    
+        if let number = dict["number"] as? Int {
+            self.number = number
+        }
         if let name = dict["name"] as? String {
             self.name = name
         }

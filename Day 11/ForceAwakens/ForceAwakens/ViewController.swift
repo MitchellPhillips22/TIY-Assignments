@@ -10,27 +10,38 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet weak var characterTable: UITableView!
+//    @IBOutlet weak var characterTable: UITableView!
     
     var characterArray = [StarWarsCharacter]()
     var currentCharacter: StarWarsCharacter?
 
+    var jsonString = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let (jsonString, starWars) = loadJSONFile("starWars", fileType: "json")
+        
+        let (jsonString, data) = loadJSONFile("starWars", fileType: "json")
         print(jsonString)
         
-        if let starWars = starWars {
+        if let data = data {
+            
             do {
-                let object = try NSJSONSerialization.JSONObjectWithData(starWars, options: .AllowFragments)
+                
+                let object = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
+                    print("cool")
                 if let dict = object as? JSONDictionary {
-                    if let characters = dict["characters"] as? JSONArray {
-                        for result in characters {
+                    
+                    if let results = dict["characters"] as? JSONArray {
+                        for result in results {
+                            
                             let c = StarWarsCharacter(dict: result)
                             self.characterArray.append(c)
+                            
                         }
                     }
+                }
+                for currentCharacter in characterArray {
+                    print(currentCharacter.name)
                 }
 
             } catch {
@@ -40,34 +51,35 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        
-        let randomNumber = Int(arc4random_uniform(4))
-        
-        
-        if randomNumber == 1 {
+        var currentNumber = currentCharacter?.number
+    
+        if currentNumber == currentNumber {
         
             let cell = tableView.dequeueReusableCellWithIdentifier("TypeOneCell", forIndexPath: indexPath) as! TypeOneTableViewCell
              let c = self.characterArray[indexPath.row]
             cell.nameLabel?.text = c.name
             cell.affiliationLabel?.text = c.affiliation
-            return cell
-        
+             print("cool")
+            
+            
         }
-        else if randomNumber == 2 {
+        if currentNumber == currentNumber {
             let cell = tableView.dequeueReusableCellWithIdentifier("TypeTwoCell", forIndexPath: indexPath) as! TypeTwoTableViewCell
             let c = self.characterArray[indexPath.row]
             cell.charImage?.image = UIImage(named: c.image)
-            return cell
+             print("rad")
             
+           
         }
-        else if randomNumber == 3 {
+       if currentNumber == currentNumber {
             let cell = tableView.dequeueReusableCellWithIdentifier("TypeThreeCell", forIndexPath: indexPath) as! TypeThreeTableViewCell
             let c = self.characterArray[indexPath.row]
             cell.descriptionLabel?.text = c.description
-            return cell
+         print("nice")
+        
+        
             }
-        return UITableViewCell() 
+        return UITableViewCell()
     }
     
     

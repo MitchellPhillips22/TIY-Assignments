@@ -12,8 +12,6 @@ class TypeOneTableViewCell: UITableViewCell {
     
     var starWarsChar: StarWarsCharacter?
 
-
-    
     @IBOutlet weak var nameLabel: UILabel!
     
     @IBOutlet weak var affiliationLabel: UILabel!
