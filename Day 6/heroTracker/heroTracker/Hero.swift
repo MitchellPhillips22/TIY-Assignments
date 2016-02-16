@@ -8,10 +8,10 @@
 
 import Foundation
 class Hero {
-    var name: String
-    var homeworld: String
-    var powers: String
-    var image: String
+    var name: String = ""
+    var homeworld: String = ""
+    var powers: String = ""
+    var image: String = ""
     
     init(name: String, homeworld: String, powers: String, image: String) {
         self.name = name

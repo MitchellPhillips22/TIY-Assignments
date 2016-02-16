@@ -1,0 +1,70 @@
+{
+    "characters": [
+              {
+              "name": "Luke Skywalker",
+              "affiliation": "Rebel Alliance, Jedi Order",
+              "description": "Luke Skywalker was a Tatooine farmboy who rose from humble beginnings to become one of the greatest Jedi the galaxy has ever known. Along with his friends Princess Leia and Han Solo, Luke battled the evil Empire, discovered the truth of his parentage, and ended the tyranny of the Sith. A generation later, the location of the famed Jedi master was one of the galaxy’s greatest mysteries.",
+                "image": "lukeSkywalker"
+              },
+              {
+              "name": "Han Solo",
+              "affiliation": "Rebel Alliance",
+              "description": "Smuggler. Scoundrel. Hero. Han Solo, captain of the Millennium Falcon, was one of the great leaders of the Rebel Alliance. He and his co-pilot Chewbacca came to believe in the cause of galactic freedom, joining Luke Skywalker and Princess Leia Organa in the fight against the Empire. But after the Battle of Endor, Han would face difficult times in a galaxy plagued by chaos and uncertainty.",
+                "image": "hanSolo"
+              },
+              {
+              "name": "Princess Leia",
+              "affiliation": "Rebel Alliance",
+              "description": "Princess Leia Organa was one of the Rebel Alliance’s greatest leaders, fearless on the battlefield and dedicated to ending the tyranny of the Empire. Daughter of Padmé Amidala and Anakin Skywalker, sister of Luke Skywalker, and with a soft spot for scoundrels, Leia ranks among the galaxy’s great heroes. But life under the New Republic has not been easy for Leia. Sidelined by a new generation of political leaders, and struck out on her own to oppose the First Order as founder of the Resistance. These setbacks in her political career have been accompanied by more personal losses.",
+                "image": "princessLeia"
+              }
+              {
+              "name": "Yoda",
+              "affiliation": "Jedi Order",
+              "description": "Yoda was a legendary Jedi Master and stronger than most in his connection with the Force. Small in size but wise and powerful, he trained Jedi for over 800 years, playing integral roles in the Clone Wars, the instruction of Luke Skywalker, and unlocking the path to immortality.",
+                "image": "yoda"
+              }
+              {
+              "name": "Darth Vader",
+              "affiliation": "Sith",
+              "description": "Once a heroic Jedi Knight, Darth Vader was seduced by the dark side of the Force, became a Sith Lord, and led the Empire’s eradication of the Jedi Order. He remained in service of the Emperor -- the evil Darth Sidious -- for decades, enforcing his Master’s will and seeking to crush the fledgling Rebel Alliance. But there was still good in him…",
+                "image": "darthVader"
+              }
+              {
+              "name": "Appo",
+              "affiliation": "Galactic Republic, Clone Troopers",
+              "description": "A clone trooper in Republic service, Appo took part in a number of critical battles during the fight against the Separatists. As a sergeant, he served under General Pong Krell on Umbara, and saw firsthand Krell’s willingness to throw away the lives of his troops. In the final days of the war Appo accompanied Anakin Skywalker to Coruscant’s Jedi Temple as part of Order 66. When Senator Bail Organa arrived during the aftermath of the Temple attack, Appo told him of the “Jedi rebellion” and ordered him to leave the area.",
+                "image": "appo"
+              }
+              {
+              "name": "Biggs Darklighter",
+              "affiliation": "Rebel Alliance",
+              "description": "Biggs Darklighter grew up on Tatooine with Luke Skywalker, and shared his friend's dreams of escaping the dull desert world. After graduating from the Imperial Academy, he defected from the Empire's service to join the Rebellion. He and Luke were reunited at Yavin 4's Rebel base, and flew together against the Death Star. Luke returned from that mission as a hero, but Biggs did not survive.",
+                "image": "biggs"
+              }
+              {
+              "name": "Captain Antilles",
+              "affiliation": "Rebel Alliance",
+              "description": "A level-headed ship officer schooled in diplomacy, and a capable pilot entrusted to ferry about the royal family of Alderaan, Captain Antilles served in Bail Organa's command staff. He was part of the bridge crew of Organa's diplomatic cruiser, a role he would continue during the time Princess Leia served as Senator of Alderaan.",
+                "image": "captainAntilles"
+              }
+              {
+              "name": "Captain Phasma",
+              "affiliation": "First Order",
+              "description": "Clad in distinctive armor of salvaged chromium, Captain Phasma commands the First Order’s legions of stormtroopers. A tough veteran commander, she has no use for fancy titles or complex war rooms, preferring to lead her troops in battle against the First Order’s enemies.",
+                "image": "captainPhasma"
+              }
+              {
+              "name": "Captain Merumeru",
+              "affiliation": "Galactic Republic",
+              "description": "Captain Merumeru was a Wookiee chieftain that led a group of Wookiee warriors into battle against the Separatists on Kashyyyk. Leading the charge with a roar, he fought valiantly on the beaches at the battle of Kachirho City alongside his Wookiees and Clone Soldiers of the Republic in the hours leading up to Order 66.",
+                "image": "captainMerumeru"
+              }
+              {
+              "name": "Emperor Palpatine/Darth Sidious",
+              "affiliation": "Galactic Empire, Sith",
+              "description": "Scheming, powerful, and evil to the core, Darth Sidious restored the Sith and destroyed the Jedi Order. Living a double life, Sidious was in fact Palpatine, a Naboo Senator and phantom menace. He slowly manipulated the political system of the Galactic Republic until he was named Supreme Chancellor -- and eventually Emperor -- ruling the galaxy through fear and tyranny.",
+                "image": "darthSidious"
+              }
+              ]
+}
