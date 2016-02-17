@@ -51,38 +51,56 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var currentNumber = currentCharacter?.number
-    
-        if currentNumber == currentNumber {
+        let c = self.characterArray[indexPath.row]
         
-            let cell = tableView.dequeueReusableCellWithIdentifier("TypeOneCell", forIndexPath: indexPath) as! TypeOneTableViewCell
-             let c = self.characterArray[indexPath.row]
+        var cell: UITableViewCell?
+        
+        if c.number == 1 {
+             let typeOneCell = tableView.dequeueReusableCellWithIdentifier("TypeOneCell", forIndexPath: indexPath) as! TypeOneTableViewCell
             cell.nameLabel?.text = c.name
             cell.affiliationLabel?.text = c.affiliation
-             print("cool")
-            
-            
+            print("cool")
+
         }
-        if currentNumber == currentNumber {
-            let cell = tableView.dequeueReusableCellWithIdentifier("TypeTwoCell", forIndexPath: indexPath) as! TypeTwoTableViewCell
-            let c = self.characterArray[indexPath.row]
-            cell.charImage?.image = UIImage(named: c.image)
-             print("rad")
-            
-           
-        }
-       if currentNumber == currentNumber {
-            let cell = tableView.dequeueReusableCellWithIdentifier("TypeThreeCell", forIndexPath: indexPath) as! TypeThreeTableViewCell
-            let c = self.characterArray[indexPath.row]
-            cell.descriptionLabel?.text = c.description
-         print("nice")
         
-        
-            }
-        return UITableViewCell()
     }
     
-    
+//    var currentNumber = currentCharacter?.number
+//    
+//    if currentNumber == currentNumber {
+//    
+//    let cell = tableView.dequeueReusableCellWithIdentifier("TypeOneCell", forIndexPath: indexPath) as! TypeOneTableViewCell
+//    let c = self.characterArray[indexPath.row]
+//    cell.nameLabel?.text = c.name
+//    cell.affiliationLabel?.text = c.affiliation
+//    print("cool")
+//    
+//    
+//    }
+//    if currentNumber == currentNumber {
+//    let cell = tableView.dequeueReusableCellWithIdentifier("TypeTwoCell", forIndexPath: indexPath) as! TypeTwoTableViewCell
+//    let c = self.characterArray[indexPath.row]
+//    cell.charImage?.image = UIImage(named: c.image)
+//    print("rad")
+//    
+//    
+//    }
+//    if currentNumber == currentNumber {
+//    let cell = tableView.dequeueReusableCellWithIdentifier("TypeThreeCell", forIndexPath: indexPath) as! TypeThreeTableViewCell
+//    let c = self.characterArray[indexPath.row]
+//    cell.descriptionLabel?.text = c.description
+//    print("nice")
+//    
+//    
+//    }
+//    return UITableViewCell()
+//}
+//
+
+
+
+
+
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
             self.currentCharacter = self.characterArray[indexPath.row]
     }
