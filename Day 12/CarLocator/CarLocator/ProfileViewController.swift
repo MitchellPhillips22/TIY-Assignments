@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
 class ProfileViewController: UIViewController, UITextFieldDelegate {
 
@@ -16,15 +18,9 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var yearText: UITextField!
     @IBOutlet weak var licenseText: UITextField!
  
-    
-
-
     var blueColorValue: Float = 0.5
     var greenColorValue: Float = 0.5
     var redColorValue: Float = 0.5
-    
-    
-
     
     @IBAction func saveButton(sender: UIButton) {
         saveDefaults()
@@ -40,7 +36,9 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
     }
         func changeBackgroundColor() {
             
-            let color = UIColor(red: CGFloat(self.redColorValue), green: CGFloat(self.greenColorValue), blue: CGFloat(self.blueColorValue) , alpha: 1.0)
+            Config.sharedInstance.loadConfiguation()
+            
+            let color = UIColor(red: CGFloat(Config.sharedInstance.redColorValue), green: CGFloat(Config.sharedInstance.greenColorValue), blue: CGFloat(Config.sharedInstance.blueColorValue) , alpha: 1.0)
             
             self.view.backgroundColor = color
             
@@ -48,36 +46,31 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
             
         }
     func loadDefaults() {
-        let defaults = NSUserDefaults.standardUserDefaults()
+            Config.sharedInstance.loadConfiguation()
         
-        let today = defaults.objectForKey("LastUsedTime") as? NSDate
-        
-        if today != nil {
-            self.nameText.text = defaults.valueForKey("NameValue") as? String
-            self.makeText.text = defaults.stringForKey("MakeValue")
-            self.modelText.text = defaults.stringForKey("ModelValue")
-            self.yearText.text = defaults.stringForKey("YearValue")
-            self.licenseText.text = defaults.stringForKey("LicenseValue")
+            // both valueForKey and stringForKey can work here
+            self.nameText.text = Config.sharedInstance.name
+            self.makeText.text = Config.sharedInstance.make
+            self.modelText.text = Config.sharedInstance.model
+            self.yearText.text = Config.sharedInstance.year
+            self.licenseText.text = Config.sharedInstance.licensePlate
             
-            self.redColorValue = defaults.floatForKey("RedKey")
-            self.greenColorValue = defaults.floatForKey("GreenKey")
-            self.blueColorValue = defaults.floatForKey("BlueKey")
+            self.redColorValue = Config.sharedInstance.redColorValue
+            self.greenColorValue = Config.sharedInstance.greenColorValue
+            self.blueColorValue = Config.sharedInstance.blueColorValue
             
-                 }
     }
     func saveDefaults() {
-        let defaults = NSUserDefaults.standardUserDefaults()
         
-        defaults.setObject(NSDate(), forKey: "LastUsedTime")
         
-        defaults.setObject(self.nameText.text, forKey: "NameValue")
-        defaults.setObject(self.makeText.text, forKey: "MakeValue")
-        defaults.setObject(self.modelText.text, forKey: "ModelValue")
-        defaults.setObject(self.yearText.text, forKey: "YearValue")
-        defaults.setObject(self.licenseText.text, forKey: "LicenseValue")
+        Config.sharedInstance.name = self.nameText.text
+        Config.sharedInstance.make = self.makeText.text
+        Config.sharedInstance.model = self.modelText.text
+        Config.sharedInstance.year = self.yearText.text
+        Config.sharedInstance.licensePlate = self.licenseText.text
         print("saveSuccessful")
         
-        defaults.synchronize()
+        Config.sharedInstance.saveConfiguration()
     }
 
 }

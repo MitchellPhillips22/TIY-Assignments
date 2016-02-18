@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B0EC0C51C74DA79005B7CEA /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0EC0C41C74DA79005B7CEA /* Config.swift */; };
+		1B0EC0E71C751156005B7CEA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0EC0E61C751156005B7CEA /* MapKit.framework */; };
 		1B719DB31C73C38500371A12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B719DB21C73C38500371A12 /* AppDelegate.swift */; };
 		1B719DB51C73C38500371A12 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B719DB41C73C38500371A12 /* ProfileViewController.swift */; };
-		1B719DB71C73C38500371A12 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B719DB61C73C38500371A12 /* SecondViewController.swift */; };
+		1B719DB71C73C38500371A12 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B719DB61C73C38500371A12 /* MapViewController.swift */; };
 		1B719DBA1C73C38500371A12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B719DB81C73C38500371A12 /* Main.storyboard */; };
 		1B719DBC1C73C38500371A12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B719DBB1C73C38500371A12 /* Assets.xcassets */; };
 		1B719DBF1C73C38500371A12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B719DBD1C73C38500371A12 /* LaunchScreen.storyboard */; };
@@ -19,10 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B0EC0C41C74DA79005B7CEA /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		1B0EC0E61C751156005B7CEA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		1B719DAF1C73C38500371A12 /* CarLocator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarLocator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B719DB21C73C38500371A12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B719DB41C73C38500371A12 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		1B719DB61C73C38500371A12 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		1B719DB61C73C38500371A12 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1B719DB91C73C38500371A12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B719DBB1C73C38500371A12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B719DBE1C73C38500371A12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B0EC0E71C751156005B7CEA /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +52,7 @@
 		1B719DA61C73C38500371A12 = {
 			isa = PBXGroup;
 			children = (
+				1B0EC0E61C751156005B7CEA /* MapKit.framework */,
 				1B719DB11C73C38500371A12 /* CarLocator */,
 				1B719DB01C73C38500371A12 /* Products */,
 			);
@@ -65,9 +71,10 @@
 			children = (
 				1B719DB21C73C38500371A12 /* AppDelegate.swift */,
 				1B719DB41C73C38500371A12 /* ProfileViewController.swift */,
-				1B719DB61C73C38500371A12 /* SecondViewController.swift */,
+				1B719DB61C73C38500371A12 /* MapViewController.swift */,
 				1B719DC61C73CB8800371A12 /* SettingsTableViewController.swift */,
 				1B719DDE1C73DF3000371A12 /* TableViewCell.swift */,
+				1B0EC0C41C74DA79005B7CEA /* Config.swift */,
 				1B719DB81C73C38500371A12 /* Main.storyboard */,
 				1B719DBB1C73C38500371A12 /* Assets.xcassets */,
 				1B719DDB1C73CF6900371A12 /* Cicle_Fina.ttf */,
@@ -110,6 +117,11 @@
 				TargetAttributes = {
 					1B719DAE1C73C38500371A12 = {
 						CreatedOnToolsVersion = 7.2.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -152,9 +164,10 @@
 			files = (
 				1B719DDF1C73DF3000371A12 /* TableViewCell.swift in Sources */,
 				1B719DC71C73CB8800371A12 /* SettingsTableViewController.swift in Sources */,
-				1B719DB71C73C38500371A12 /* SecondViewController.swift in Sources */,
+				1B719DB71C73C38500371A12 /* MapViewController.swift in Sources */,
 				1B719DB31C73C38500371A12 /* AppDelegate.swift in Sources */,
 				1B719DB51C73C38500371A12 /* ProfileViewController.swift in Sources */,
+				1B0EC0C51C74DA79005B7CEA /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +315,7 @@
 				1B719DC51C73C38500371A12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -27,6 +27,7 @@ class TableViewCell: UITableViewCell {
         } else if sender == redSlider {
             self.redColorValue = sender.value
         }
+        
         saveDefaults()
         changeBackgroundColor()
 
@@ -51,30 +52,25 @@ class TableViewCell: UITableViewCell {
     }
     
     func saveDefaults() {
-        let defaults = NSUserDefaults.standardUserDefaults()
+
         
-        defaults.setObject(NSDate(), forKey: "LastUsedTime")
+        Config.sharedInstance.redColorValue = redSlider.value
+        Config.sharedInstance.greenColorValue = greenSlider.value
+        Config.sharedInstance.blueColorValue = blueSlider.value
         
-        defaults.setFloat(self.redColorValue, forKey: "RedKey")
-        defaults.setFloat(self.greenColorValue, forKey: "GreenKey")
-        defaults.setFloat(self.blueColorValue, forKey: "BlueKey")
-        
-        defaults.synchronize()
+        Config.sharedInstance.saveConfiguration()
     }
     
     func loadDefaults() {
-        let defaults = NSUserDefaults.standardUserDefaults()
+            Config.sharedInstance.loadConfiguation()
         
-        let today = defaults.objectForKey("LastUsedTime") as? NSDate
-        
-        if today != nil {
-            self.redColorValue = defaults.floatForKey("RedKey")
-            self.greenColorValue = defaults.floatForKey("GreenKey")
-            self.blueColorValue = defaults.floatForKey("BlueKey")
+            self.redColorValue = Config.sharedInstance.redColorValue
+            self.greenColorValue = Config.sharedInstance.greenColorValue
+            self.blueColorValue = Config.sharedInstance.blueColorValue
             
-            self.redSlider.value = self.redColorValue
-            self.greenSlider.value = self.greenColorValue
-            self.blueSlider.value = self.blueColorValue
-        }
+            self.redSlider.value = Config.sharedInstance.redColorValue
+            self.greenSlider.value = Config.sharedInstance.greenColorValue
+            self.blueSlider.value = Config.sharedInstance.blueColorValue
+        
     }
 }
