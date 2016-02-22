@@ -81,6 +81,12 @@ class DetailViewController: UIViewController {
             menuViewController.currentRestaurant = self.currentRestaurant
         }
     }
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if segue.identifier == "mapSegue" {
+//            let mapViewController = segue.destinationViewController as! MapViewController
+//            mapViewController.currentRestaurant = self.currentRestaurant
+//        }
+//    }
     func loadJSONFile(filename: String, fileType: String) -> (String, NSData?) {
         
         var returnString = ""

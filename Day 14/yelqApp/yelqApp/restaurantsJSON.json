@@ -4,7 +4,7 @@
                     "description": "Since 1955, we’ve been proud to serve the world some of its favorite food. And along the way, we’ve managed not just to live history, but create it:  from drive-thru restaurants to Chicken McNuggets to college credits from Hamburger U and much more. It’s been quite the journey, and we promise this is just the beginning-we’ve got our hearts set on making more history.",
                     "location": "4217 S Redwood Rd Salt Lake, UT 84123",
                     "latitude": 40.679342,
-                    "longitude": (-111.938294),
+                    "longitude": -111.938294,
                     "image": "mcDsLogo",
                     "menu": [{
                              "menuName": "McDonaldsMenu",
@@ -33,7 +33,7 @@
                     "description": "Founded in 1961 by John Galardi with a single location in Southern California, Wienerschnitzel has grown to be the world’s largest hot dog chain serving more than 120 million hot dogs a year; and we’re über famous for our delicious secret-recipe chili that we like to smother on fries, hot dogs and burgers.",
                     "location": "3145 W 3500 S West Valley, UT 84119 ",
                     "latitude": 40.696327,
-                    "longitude": (-111.966296),
+                    "longitude": -111.966296,
                     "image": "weinerLogo",
                     "menu": [{
                              "menuName": "WienerMenu",
