@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B5538BF1C76B89200DD2350 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5538BE1C76B89200DD2350 /* RestaurantTableViewCell.swift */; };
+		1B5538C11C76E50500DD2350 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5538C01C76E50500DD2350 /* DetailViewController.swift */; };
+		1B5538C31C76EB6E00DD2350 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5538C21C76EB6E00DD2350 /* MenuTableViewController.swift */; };
+		1B5538C61C77859A00DD2350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B5538C41C77859A00DD2350 /* Main.storyboard */; };
+		1B5538C81C77A6F900DD2350 /* DishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5538C71C77A6F900DD2350 /* DishViewController.swift */; };
+		1B5538CA1C77ABF600DD2350 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5538C91C77ABF600DD2350 /* MenuTableViewCell.swift */; };
+		1BA293D21C76356C003D7751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA293D11C76356C003D7751 /* AppDelegate.swift */; };
+		1BA293D41C76356C003D7751 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA293D31C76356C003D7751 /* LoginViewController.swift */; };
+		1BA293D91C76356C003D7751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA293D81C76356C003D7751 /* Assets.xcassets */; };
+		1BA293DC1C76356C003D7751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA293DA1C76356C003D7751 /* LaunchScreen.storyboard */; };
+		1BA293E41C764969003D7751 /* restaurantsJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 1BA293E31C764969003D7751 /* restaurantsJSON.json */; };
+		1BA293E61C7649D8003D7751 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA293E51C7649D8003D7751 /* HomeViewController.swift */; };
+		1BA293E81C764A72003D7751 /* RestaurantsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA293E71C764A72003D7751 /* RestaurantsTableViewController.swift */; };
+		1BA293F31C7650E5003D7751 /* Sansita-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BA293EA1C7650E5003D7751 /* Sansita-Black.otf */; };
+		1BA293F41C7650E5003D7751 /* Sansita-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BA293EB1C7650E5003D7751 /* Sansita-BlackItalic.otf */; };
+		1BA293F51C7650E5003D7751 /* Sansita-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BA293EC1C7650E5003D7751 /* Sansita-Bold.otf */; };
+		1BA293F61C7650E5003D7751 /* Sansita-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BA293ED1C7650E5003D7751 /* Sansita-BoldItalic.otf */; };
+		1BA293F71C7650E5003D7751 /* Sansita-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BA293EE1C7650E5003D7751 /* Sansita-ExtraBold.otf */; };
+		1BA293F81C7650E5003D7751 /* Sansita-ExtraBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BA293EF1C7650E5003D7751 /* Sansita-ExtraBoldItalic.otf */; };
+		1BA293F91C7650E5003D7751 /* Sansita-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BA293F01C7650E5003D7751 /* Sansita-Italic.otf */; };
+		1BA293FA1C7650E5003D7751 /* Sansita-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BA293F11C7650E5003D7751 /* Sansita-Regular.otf */; };
+		1BA293FB1C7650E5003D7751 /* SIL Open Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1BA293F21C7650E5003D7751 /* SIL Open Font License.txt */; };
+		1BA293FF1C7650F3003D7751 /* Lobster_1.3.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BA293FD1C7650F3003D7751 /* Lobster_1.3.otf */; };
+		1BA294001C7650F3003D7751 /* SIL Open Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1BA293FE1C7650F3003D7751 /* SIL Open Font License.txt */; };
+		1BA294041C76510F003D7751 /* GreatVibes-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BA294021C76510F003D7751 /* GreatVibes-Regular.otf */; };
+		1BA294051C76510F003D7751 /* SIL Open Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1BA294031C76510F003D7751 /* SIL Open Font License.txt */; };
+		1BA2940A1C765118003D7751 /* SIL Open Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1BA294071C765118003D7751 /* SIL Open Font License.txt */; };
+		1BA2940B1C765118003D7751 /* Tangerine_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BA294081C765118003D7751 /* Tangerine_Bold.ttf */; };
+		1BA2940C1C765118003D7751 /* Tangerine_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BA294091C765118003D7751 /* Tangerine_Regular.ttf */; };
+		1BA294151C765120003D7751 /* Cinzel-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BA2940E1C765120003D7751 /* Cinzel-Black.otf */; };
+		1BA294161C765120003D7751 /* Cinzel-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BA2940F1C765120003D7751 /* Cinzel-Bold.otf */; };
+		1BA294171C765120003D7751 /* Cinzel-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BA294101C765120003D7751 /* Cinzel-Regular.otf */; };
+		1BA294181C765120003D7751 /* CinzelDecorative-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BA294111C765120003D7751 /* CinzelDecorative-Black.otf */; };
+		1BA294191C765120003D7751 /* CinzelDecorative-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BA294121C765120003D7751 /* CinzelDecorative-Bold.otf */; };
+		1BA2941A1C765120003D7751 /* CinzelDecorative-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BA294131C765120003D7751 /* CinzelDecorative-Regular.otf */; };
+		1BA2941B1C765120003D7751 /* SIL Open Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1BA294141C765120003D7751 /* SIL Open Font License.txt */; };
+		1BA294221C765129003D7751 /* Caviar_Dreams_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BA2941D1C765129003D7751 /* Caviar_Dreams_Bold.ttf */; };
+		1BA294231C765129003D7751 /* CaviarDreams.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BA2941E1C765129003D7751 /* CaviarDreams.ttf */; };
+		1BA294241C765129003D7751 /* CaviarDreams_BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BA2941F1C765129003D7751 /* CaviarDreams_BoldItalic.ttf */; };
+		1BA294251C765129003D7751 /* CaviarDreams_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BA294201C765129003D7751 /* CaviarDreams_Italic.ttf */; };
+		1BA294261C765129003D7751 /* Nymphont License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1BA294211C765129003D7751 /* Nymphont License.txt */; };
+		1BA294281C766605003D7751 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA294271C766605003D7751 /* AboutViewController.swift */; };
+		1BA2942A1C7681A8003D7751 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA294291C7681A8003D7751 /* BorderButton.swift */; };
+		1BA2942C1C7689C7003D7751 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA2942B1C7689C7003D7751 /* Config.swift */; };
+		1BA2942E1C7689E5003D7751 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA2942D1C7689E5003D7751 /* Restaurant.swift */; };
+		1BA294321C768A1A003D7751 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA294311C768A1A003D7751 /* Menu.swift */; };
+		1BA294341C768A40003D7751 /* Dishes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA294331C768A40003D7751 /* Dishes.swift */; };
+		1BA294361C768A59003D7751 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA294351C768A59003D7751 /* User.swift */; };
+		1BEACCE11C78FB44005629AA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEACCE01C78FB44005629AA /* MapKit.framework */; };
+		1BEACCE31C78FCF6005629AA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEACCE21C78FCF6005629AA /* MapViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B5538BE1C76B89200DD2350 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		1B5538C01C76E50500DD2350 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		1B5538C21C76EB6E00DD2350 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		1B5538C51C77859A00DD2350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B5538C71C77A6F900DD2350 /* DishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DishViewController.swift; sourceTree = "<group>"; };
+		1B5538C91C77ABF600DD2350 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		1BA293CE1C76356C003D7751 /* yelqApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yelqApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BA293D11C76356C003D7751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1BA293D31C76356C003D7751 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1BA293D81C76356C003D7751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BA293DB1C76356C003D7751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1BA293DD1C76356C003D7751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BA293E31C764969003D7751 /* restaurantsJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restaurantsJSON.json; sourceTree = "<group>"; };
+		1BA293E51C7649D8003D7751 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1BA293E71C764A72003D7751 /* RestaurantsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantsTableViewController.swift; sourceTree = "<group>"; };
+		1BA293EA1C7650E5003D7751 /* Sansita-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sansita-Black.otf"; sourceTree = "<group>"; };
+		1BA293EB1C7650E5003D7751 /* Sansita-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sansita-BlackItalic.otf"; sourceTree = "<group>"; };
+		1BA293EC1C7650E5003D7751 /* Sansita-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sansita-Bold.otf"; sourceTree = "<group>"; };
+		1BA293ED1C7650E5003D7751 /* Sansita-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sansita-BoldItalic.otf"; sourceTree = "<group>"; };
+		1BA293EE1C7650E5003D7751 /* Sansita-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sansita-ExtraBold.otf"; sourceTree = "<group>"; };
+		1BA293EF1C7650E5003D7751 /* Sansita-ExtraBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sansita-ExtraBoldItalic.otf"; sourceTree = "<group>"; };
+		1BA293F01C7650E5003D7751 /* Sansita-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sansita-Italic.otf"; sourceTree = "<group>"; };
+		1BA293F11C7650E5003D7751 /* Sansita-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sansita-Regular.otf"; sourceTree = "<group>"; };
+		1BA293F21C7650E5003D7751 /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
+		1BA293FD1C7650F3003D7751 /* Lobster_1.3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lobster_1.3.otf; sourceTree = "<group>"; };
+		1BA293FE1C7650F3003D7751 /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
+		1BA294021C76510F003D7751 /* GreatVibes-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GreatVibes-Regular.otf"; sourceTree = "<group>"; };
+		1BA294031C76510F003D7751 /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
+		1BA294071C765118003D7751 /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
+		1BA294081C765118003D7751 /* Tangerine_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tangerine_Bold.ttf; sourceTree = "<group>"; };
+		1BA294091C765118003D7751 /* Tangerine_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tangerine_Regular.ttf; sourceTree = "<group>"; };
+		1BA2940E1C765120003D7751 /* Cinzel-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cinzel-Black.otf"; sourceTree = "<group>"; };
+		1BA2940F1C765120003D7751 /* Cinzel-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cinzel-Bold.otf"; sourceTree = "<group>"; };
+		1BA294101C765120003D7751 /* Cinzel-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cinzel-Regular.otf"; sourceTree = "<group>"; };
+		1BA294111C765120003D7751 /* CinzelDecorative-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CinzelDecorative-Black.otf"; sourceTree = "<group>"; };
+		1BA294121C765120003D7751 /* CinzelDecorative-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CinzelDecorative-Bold.otf"; sourceTree = "<group>"; };
+		1BA294131C765120003D7751 /* CinzelDecorative-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CinzelDecorative-Regular.otf"; sourceTree = "<group>"; };
+		1BA294141C765120003D7751 /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
+		1BA2941D1C765129003D7751 /* Caviar_Dreams_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Caviar_Dreams_Bold.ttf; sourceTree = "<group>"; };
+		1BA2941E1C765129003D7751 /* CaviarDreams.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams.ttf; sourceTree = "<group>"; };
+		1BA2941F1C765129003D7751 /* CaviarDreams_BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_BoldItalic.ttf; sourceTree = "<group>"; };
+		1BA294201C765129003D7751 /* CaviarDreams_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_Italic.ttf; sourceTree = "<group>"; };
+		1BA294211C765129003D7751 /* Nymphont License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Nymphont License.txt"; sourceTree = "<group>"; };
+		1BA294271C766605003D7751 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		1BA294291C7681A8003D7751 /* BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
+		1BA2942B1C7689C7003D7751 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		1BA2942D1C7689E5003D7751 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		1BA294311C768A1A003D7751 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Menu.swift; path = ../Menu.swift; sourceTree = "<group>"; };
+		1BA294331C768A40003D7751 /* Dishes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dishes.swift; path = ../Dishes.swift; sourceTree = "<group>"; };
+		1BA294351C768A59003D7751 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1BEACCE01C78FB44005629AA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1BEACCE21C78FCF6005629AA /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BA293CB1C76356C003D7751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BEACCE11C78FB44005629AA /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BA293C51C76356C003D7751 = {
+			isa = PBXGroup;
+			children = (
+				1BEACCE01C78FB44005629AA /* MapKit.framework */,
+				1BA293D01C76356C003D7751 /* yelqApp */,
+				1BA293CF1C76356C003D7751 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BA293CF1C76356C003D7751 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BA293CE1C76356C003D7751 /* yelqApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BA293D01C76356C003D7751 /* yelqApp */ = {
+			isa = PBXGroup;
+			children = (
+				1BA293D11C76356C003D7751 /* AppDelegate.swift */,
+				1BA294291C7681A8003D7751 /* BorderButton.swift */,
+				1BA293D31C76356C003D7751 /* LoginViewController.swift */,
+				1BA293E51C7649D8003D7751 /* HomeViewController.swift */,
+				1BA293E71C764A72003D7751 /* RestaurantsTableViewController.swift */,
+				1B5538BE1C76B89200DD2350 /* RestaurantTableViewCell.swift */,
+				1BA294271C766605003D7751 /* AboutViewController.swift */,
+				1B5538C01C76E50500DD2350 /* DetailViewController.swift */,
+				1BEACCE21C78FCF6005629AA /* MapViewController.swift */,
+				1B5538C21C76EB6E00DD2350 /* MenuTableViewController.swift */,
+				1B5538C91C77ABF600DD2350 /* MenuTableViewCell.swift */,
+				1B5538C71C77A6F900DD2350 /* DishViewController.swift */,
+				1BA2942B1C7689C7003D7751 /* Config.swift */,
+				1BA2942D1C7689E5003D7751 /* Restaurant.swift */,
+				1BA294311C768A1A003D7751 /* Menu.swift */,
+				1BA294331C768A40003D7751 /* Dishes.swift */,
+				1BA294351C768A59003D7751 /* User.swift */,
+				1B5538C41C77859A00DD2350 /* Main.storyboard */,
+				1BA293D81C76356C003D7751 /* Assets.xcassets */,
+				1BA293DA1C76356C003D7751 /* LaunchScreen.storyboard */,
+				1BA293E31C764969003D7751 /* restaurantsJSON.json */,
+				1BA2941C1C765129003D7751 /* Caviar-Dreams */,
+				1BA2940D1C765120003D7751 /* cinzel */,
+				1BA294061C765118003D7751 /* Tangerine */,
+				1BA294011C76510F003D7751 /* great-vibes */,
+				1BA293FC1C7650F3003D7751 /* Lobster */,
+				1BA293E91C7650E5003D7751 /* sansita */,
+				1BA293DD1C76356C003D7751 /* Info.plist */,
+			);
+			path = yelqApp;
+			sourceTree = "<group>";
+		};
+		1BA293E91C7650E5003D7751 /* sansita */ = {
+			isa = PBXGroup;
+			children = (
+				1BA293EA1C7650E5003D7751 /* Sansita-Black.otf */,
+				1BA293EB1C7650E5003D7751 /* Sansita-BlackItalic.otf */,
+				1BA293EC1C7650E5003D7751 /* Sansita-Bold.otf */,
+				1BA293ED1C7650E5003D7751 /* Sansita-BoldItalic.otf */,
+				1BA293EE1C7650E5003D7751 /* Sansita-ExtraBold.otf */,
+				1BA293EF1C7650E5003D7751 /* Sansita-ExtraBoldItalic.otf */,
+				1BA293F01C7650E5003D7751 /* Sansita-Italic.otf */,
+				1BA293F11C7650E5003D7751 /* Sansita-Regular.otf */,
+				1BA293F21C7650E5003D7751 /* SIL Open Font License.txt */,
+			);
+			path = sansita;
+			sourceTree = "<group>";
+		};
+		1BA293FC1C7650F3003D7751 /* Lobster */ = {
+			isa = PBXGroup;
+			children = (
+				1BA293FD1C7650F3003D7751 /* Lobster_1.3.otf */,
+				1BA293FE1C7650F3003D7751 /* SIL Open Font License.txt */,
+			);
+			name = Lobster;
+			path = sansita/Lobster;
+			sourceTree = "<group>";
+		};
+		1BA294011C76510F003D7751 /* great-vibes */ = {
+			isa = PBXGroup;
+			children = (
+				1BA294021C76510F003D7751 /* GreatVibes-Regular.otf */,
+				1BA294031C76510F003D7751 /* SIL Open Font License.txt */,
+			);
+			path = "great-vibes";
+			sourceTree = "<group>";
+		};
+		1BA294061C765118003D7751 /* Tangerine */ = {
+			isa = PBXGroup;
+			children = (
+				1BA294071C765118003D7751 /* SIL Open Font License.txt */,
+				1BA294081C765118003D7751 /* Tangerine_Bold.ttf */,
+				1BA294091C765118003D7751 /* Tangerine_Regular.ttf */,
+			);
+			path = Tangerine;
+			sourceTree = "<group>";
+		};
+		1BA2940D1C765120003D7751 /* cinzel */ = {
+			isa = PBXGroup;
+			children = (
+				1BA2940E1C765120003D7751 /* Cinzel-Black.otf */,
+				1BA2940F1C765120003D7751 /* Cinzel-Bold.otf */,
+				1BA294101C765120003D7751 /* Cinzel-Regular.otf */,
+				1BA294111C765120003D7751 /* CinzelDecorative-Black.otf */,
+				1BA294121C765120003D7751 /* CinzelDecorative-Bold.otf */,
+				1BA294131C765120003D7751 /* CinzelDecorative-Regular.otf */,
+				1BA294141C765120003D7751 /* SIL Open Font License.txt */,
+			);
+			path = cinzel;
+			sourceTree = "<group>";
+		};
+		1BA2941C1C765129003D7751 /* Caviar-Dreams */ = {
+			isa = PBXGroup;
+			children = (
+				1BA2941D1C765129003D7751 /* Caviar_Dreams_Bold.ttf */,
+				1BA2941E1C765129003D7751 /* CaviarDreams.ttf */,
+				1BA2941F1C765129003D7751 /* CaviarDreams_BoldItalic.ttf */,
+				1BA294201C765129003D7751 /* CaviarDreams_Italic.ttf */,
+				1BA294211C765129003D7751 /* Nymphont License.txt */,
+			);
+			path = "Caviar-Dreams";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BA293CD1C76356C003D7751 /* yelqApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BA293E01C76356C003D7751 /* Build configuration list for PBXNativeTarget "yelqApp" */;
+			buildPhases = (
+				1BA293CA1C76356C003D7751 /* Sources */,
+				1BA293CB1C76356C003D7751 /* Frameworks */,
+				1BA293CC1C76356C003D7751 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = yelqApp;
+			productName = yelqApp;
+			productReference = 1BA293CE1C76356C003D7751 /* yelqApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BA293C61C76356C003D7751 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Mitchell Phillips";
+				TargetAttributes = {
+					1BA293CD1C76356C003D7751 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 3Q2C35Y544;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 1BA293C91C76356C003D7751 /* Build configuration list for PBXProject "yelqApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BA293C51C76356C003D7751;
+			productRefGroup = 1BA293CF1C76356C003D7751 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BA293CD1C76356C003D7751 /* yelqApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BA293CC1C76356C003D7751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA293FA1C7650E5003D7751 /* Sansita-Regular.otf in Resources */,
+				1BA293E41C764969003D7751 /* restaurantsJSON.json in Resources */,
+				1BA294261C765129003D7751 /* Nymphont License.txt in Resources */,
+				1BA294251C765129003D7751 /* CaviarDreams_Italic.ttf in Resources */,
+				1BA293F41C7650E5003D7751 /* Sansita-BlackItalic.otf in Resources */,
+				1BA2940A1C765118003D7751 /* SIL Open Font License.txt in Resources */,
+				1BA293F51C7650E5003D7751 /* Sansita-Bold.otf in Resources */,
+				1BA294191C765120003D7751 /* CinzelDecorative-Bold.otf in Resources */,
+				1BA293DC1C76356C003D7751 /* LaunchScreen.storyboard in Resources */,
+				1BA294181C765120003D7751 /* CinzelDecorative-Black.otf in Resources */,
+				1BA294051C76510F003D7751 /* SIL Open Font License.txt in Resources */,
+				1B5538C61C77859A00DD2350 /* Main.storyboard in Resources */,
+				1BA293F61C7650E5003D7751 /* Sansita-BoldItalic.otf in Resources */,
+				1BA294001C7650F3003D7751 /* SIL Open Font License.txt in Resources */,
+				1BA293FF1C7650F3003D7751 /* Lobster_1.3.otf in Resources */,
+				1BA2941B1C765120003D7751 /* SIL Open Font License.txt in Resources */,
+				1BA294041C76510F003D7751 /* GreatVibes-Regular.otf in Resources */,
+				1BA293FB1C7650E5003D7751 /* SIL Open Font License.txt in Resources */,
+				1BA294221C765129003D7751 /* Caviar_Dreams_Bold.ttf in Resources */,
+				1BA293F81C7650E5003D7751 /* Sansita-ExtraBoldItalic.otf in Resources */,
+				1BA293F91C7650E5003D7751 /* Sansita-Italic.otf in Resources */,
+				1BA294231C765129003D7751 /* CaviarDreams.ttf in Resources */,
+				1BA294171C765120003D7751 /* Cinzel-Regular.otf in Resources */,
+				1BA293F71C7650E5003D7751 /* Sansita-ExtraBold.otf in Resources */,
+				1BA294161C765120003D7751 /* Cinzel-Bold.otf in Resources */,
+				1BA2940C1C765118003D7751 /* Tangerine_Regular.ttf in Resources */,
+				1BA294241C765129003D7751 /* CaviarDreams_BoldItalic.ttf in Resources */,
+				1BA293D91C76356C003D7751 /* Assets.xcassets in Resources */,
+				1BA2940B1C765118003D7751 /* Tangerine_Bold.ttf in Resources */,
+				1BA293F31C7650E5003D7751 /* Sansita-Black.otf in Resources */,
+				1BA294151C765120003D7751 /* Cinzel-Black.otf in Resources */,
+				1BA2941A1C765120003D7751 /* CinzelDecorative-Regular.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BA293CA1C76356C003D7751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B5538C11C76E50500DD2350 /* DetailViewController.swift in Sources */,
+				1BA293D41C76356C003D7751 /* LoginViewController.swift in Sources */,
+				1BA294341C768A40003D7751 /* Dishes.swift in Sources */,
+				1BA293D21C76356C003D7751 /* AppDelegate.swift in Sources */,
+				1BA293E81C764A72003D7751 /* RestaurantsTableViewController.swift in Sources */,
+				1B5538BF1C76B89200DD2350 /* RestaurantTableViewCell.swift in Sources */,
+				1BA2942C1C7689C7003D7751 /* Config.swift in Sources */,
+				1BA2942E1C7689E5003D7751 /* Restaurant.swift in Sources */,
+				1B5538C31C76EB6E00DD2350 /* MenuTableViewController.swift in Sources */,
+				1BA294281C766605003D7751 /* AboutViewController.swift in Sources */,
+				1B5538CA1C77ABF600DD2350 /* MenuTableViewCell.swift in Sources */,
+				1BA294321C768A1A003D7751 /* Menu.swift in Sources */,
+				1BA293E61C7649D8003D7751 /* HomeViewController.swift in Sources */,
+				1BA2942A1C7681A8003D7751 /* BorderButton.swift in Sources */,
+				1BA294361C768A59003D7751 /* User.swift in Sources */,
+				1B5538C81C77A6F900DD2350 /* DishViewController.swift in Sources */,
+				1BEACCE31C78FCF6005629AA /* MapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1B5538C41C77859A00DD2350 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B5538C51C77859A00DD2350 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1BA293DA1C76356C003D7751 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BA293DB1C76356C003D7751 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BA293DE1C76356C003D7751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1BA293DF1C76356C003D7751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BA293E11C76356C003D7751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = yelqApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitchell.yelqApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1BA293E21C76356C003D7751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = yelqApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mitchell.yelqApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BA293C91C76356C003D7751 /* Build configuration list for PBXProject "yelqApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BA293DE1C76356C003D7751 /* Debug */,
+				1BA293DF1C76356C003D7751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BA293E01C76356C003D7751 /* Build configuration list for PBXNativeTarget "yelqApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BA293E11C76356C003D7751 /* Debug */,
+				1BA293E21C76356C003D7751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BA293C61C76356C003D7751 /* Project object */;
+}

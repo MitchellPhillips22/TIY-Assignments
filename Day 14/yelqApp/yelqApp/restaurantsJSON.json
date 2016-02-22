@@ -1,0 +1,206 @@
+{
+    "restaurants": [{
+                    "name": "McDonalds",
+                    "description": "Since 1955, we’ve been proud to serve the world some of its favorite food. And along the way, we’ve managed not just to live history, but create it:  from drive-thru restaurants to Chicken McNuggets to college credits from Hamburger U and much more. It’s been quite the journey, and we promise this is just the beginning-we’ve got our hearts set on making more history.",
+                    "location": "4217 S Redwood Rd Salt Lake, UT 84123",
+                    "latitude": 40.679342,
+                    "longitude": (-111.938294),
+                    "image": "mcDsLogo",
+                    "menu": [{
+                             "menuName": "McDonaldsMenu",
+                             "dishes": [{
+                                        "dishName": "Filet-O-Fish",
+                                        "dishDescripsh": "Dive right in and enjoy our wild-caught fish from our sustainable fishery, topped with melty American cheese, creamy tartar sauce and served on a soft, steamed bun.",
+                                        "rating": 0,
+                                        "price": "$2.00",
+                                        "dishImage": "filetOFish"
+                                        }, {
+                                        "dishName": "McRib",
+                                        "dishDescripsh": "The tasty fan favorite slathered in tangy barbecue sauce, slivered onions and tart pickles all on a hoagie style bun.",
+                                        "rating": 0,
+                                        "price": "$2.50",
+                                        "dishImage": "mcRib"
+                                        }, {
+                                        "dishName": "Sausage Burrito",
+                                        "dishDescripsh": "Spice up your morning with peppers, onions, fluffy scrambled eggs, sausage and melty cheese all wrapped in a soft tortilla.",
+                                        "rating": 0,
+                                        "price": "$1.00",
+                                        "dishImage": "sausageBurrito"
+                                        }]
+                             }]
+                    }, {
+                    "name": "Wienerschnitzel",
+                    "description": "Founded in 1961 by John Galardi with a single location in Southern California, Wienerschnitzel has grown to be the world’s largest hot dog chain serving more than 120 million hot dogs a year; and we’re über famous for our delicious secret-recipe chili that we like to smother on fries, hot dogs and burgers.",
+                    "location": "3145 W 3500 S West Valley, UT 84119 ",
+                    "latitude": 40.696327,
+                    "longitude": (-111.966296),
+                    "image": "weinerLogo",
+                    "menu": [{
+                             "menuName": "WienerMenu",
+                             "dishes": [{
+                                        "dishName": "Chili Cheese Dog",
+                                        "dishDescripsh": "Chili Cheese Dog is a grilled original Hot Dog in a fresh, steamed bun with a slice of American cheese, topped with Wienerschnitzel's world famous Chili sauce made from a secret recipe. All Chili Cheese Dogs can be served with a hot dog that is Original, 100% All Beef or Polish Sausage. The Chili Cheese Dog bun options include standard or pretzel.",
+                                        "rating": 0,
+                                        "price": "$1.50",
+                                        "dishImage": "chiliCheeseDog"
+                                        }, {
+                                        "dishName": "Polish Sandwich",
+                                        "dishDescripsh": "A spicy Polish sausage is split and placed between two slices of warm rye bread, then topped with swiss cheese, pickle spear and French's tangy mustard.",
+                                        "rating": 0,
+                                        "price": "$3.00",
+                                        "dishImage": "polishSandwich"
+                                        }, {
+                                        "dishName": "Bacon Ranch Chili Cheese Fries",
+                                        "dishDescripsh": "Golden brown French Fries topped with Wienerschnitzel’s world famous, secret recipe Chili, melted shredded cheddar cheese, ranch and a slice of chopped crisp bacon.",
+                                        "rating": 0,
+                                        "price": "$3.50",
+                                        "dishImage": "bRCCFries"
+                                        }]
+                             }]
+                    }, {
+                    "name": "Wendy's",
+                    "description": "Wendy's is an American international fast food restaurant chain founded by Dave Thomas on November 15, 1969, in Columbus, Ohio, United States. The company moved its headquarters to Dublin, Ohio, on January 29, 2006.",
+                    "location": "3149 3500 S, West Valley City, UT 84119",
+                    "latitude": 40.696349,
+                    "longitude": -111.966710,
+                    "image": "wendysLogo",
+                    "menu": [{
+                             "menuName": "WendysMenu",
+                             "dishes": [{
+                                        "dishName": "Dave's Triple",
+                                        "dishDescripsh": "Three-quarters of a pound of 100% real North American ground beef and more of the fresh premium toppings you crave—all on warm, toasted buns, to keep your hamburger hotter and juicier.",
+                                        "rating": 0,
+                                        "price": "$4.50",
+                                        "dishImage": "tripleBurger"
+                                        }, {
+                                        "dishName": "Baconator",
+                                        "dishDescripsh": "This one goes out to all the discerning carnivores. Thick-cut Applewood Smoked Bacon, two 1/4 lb* patties and even more bacon for a grand total of six (6) fresh-cooked, never microwaved strips. Topped off with mayo, ketchup and cheese on a premium toasted bun to hold the meaty masterpiece together.",
+                                        "rating": 0,
+                                        "price": "$5.50",
+                                        "dishImage": "baconator"
+                                        }, {
+                                        "dishName": "Apple Slices",
+                                        "dishDescripsh": "Mouth-watering apple slices are a great nutritious option and an excellent source of vitamin C. Eat some every day to keep the doctor away!",
+                                        "rating": 0,
+                                        "price": "$1.00",
+                                        "dishImage": "apples"
+                                        }]
+                             }]
+                    }, {
+                    "name": "Jack In The Box",
+                    "description": "Jack in the Box is an American fast-food restaurant chain founded February 21, 1951 by Robert O. Peterson in San Diego, California, where it is headquartered. The chain has 2,200 locations, primarily serving the West Coast of the United States.",
+                    "location": "775 W Telegraph St, Washington, UT 84780",
+                    "latitude": 37.127122,
+                    "longitude": -113.522669,
+                    "image": "jitbLogo",
+                    "menu": [{
+                             "menuName": "JackMenu",
+                             "dishes": [{
+                                        "dishName": "Tacos",
+                                        "dishDescripsh": "Sure, one is nice. But do you know what’s better? Two. Two crunchy tacos with American cheese, shredded lettuce, and taco sauce. Because two will always be greater than one. Who knew math could be so mouth-watering? Oh, right. We did.",
+                                        "rating": 0,
+                                        "price": "$0.99",
+                                        "dishImage": "tacos"
+                                        }, {
+                                        "dishName": "Chicken Fajita Pita",
+                                        "dishDescripsh": "Warm pita bread means a whole lot of grain—16 grams of whole grains. But wait, it gets better. Because this pita is filled with grilled chicken, shredded cheddar cheese, lettuce, grilled onions, and tomato. And, if that’s not enough, there’s also side of fire roasted salsa, too. Alright, now that’s definitely enough. Your tastebuds agree.",
+                                        "rating": 0,
+                                        "price": "$4.00",
+                                        "dishImage": "chickenPita"
+                                        }, {
+                                        "dishName": "Spicy Siracha Burger",
+                                        "dishDescripsh": "Bring the heat. Directly to your mouth. This inferno has it all—100% beef, hickory smoked bacon, sliced jalapeños, Swiss-style cheese, cool shredded lettuce, and fresh sliced tomatoes with spicy, creamy sriracha sauce, all on Jack’s signature toasty sourdough bread. Give your tastebuds a pep talk now, before it’s too late.",
+                                        "rating": 0,
+                                        "price": "$5.00",
+                                        "dishImage": "spicyBurger"
+                                        }]
+                             }]
+                    }, {
+                    "name": "Hot Dog On A Stick",
+                    "description": "HDOS Enterprises, commonly known as Hot Dog on a Stick, is a fast food company originating in Santa Monica, California, originally founded by Dave Barham.",
+                    "location": "3090 3500 S, Salt Lake City, UT 84119",
+                    "latitude": 40.696869,
+                    "longitude": -111.965410,
+                    "image": "hdoas",
+                    "menu": [{
+                             "menuName": "HotDogMenu",
+                             "dishes": [{
+                                        "dishName": "Hot Dog On A Stick",
+                                        "dishDescripsh": "Dipped in our exclusive Party batter and cooked to a golden brown, our Hot Dogs on a Stick are cooked fresh to order! Customers can choose from our original turkey hot dogs, veggie hot dogs, or Nathan’s Famous all beef hot dogs. And they are never cooked until you order them!",
+                                        "rating": 0,
+                                        "price": "$1.00",
+                                        "dishImage": "cornDog"
+                                        }, {
+                                        "dishName": "Cheese On A Stick",
+                                        "dishDescripsh": "Choose from American cheese, or a slightly spicy jack cheese with mild jalapeno peppers. Both flavors are dipped like our Hot Dogs on a Stick and cooked to golden perfection. It’s like a grilled cheese sandwich on a stick…only better!",
+                                        "rating": 0,
+                                        "price": "$1.00",
+                                        "dishImage": "cheeseonastick"
+                                        }, {
+                                        "dishName": "Funnel Cake Sticks",
+                                        "dishDescripsh": "This yummy sweet treat is the perfect anytime snack! Our Funnel Cake Sticks are cooked to a golden brown and then served with a sprinkle of powdered sugar! You can also add your choice of chocolate or raspberry drizzle.",
+                                        "rating": 0,
+                                        "price": "$2.00",
+                                        "dishImage": "funnelCake"
+                                        }]
+                             }]
+                    }, {
+                    "name": "Carl's Jr.",
+                    "description": "Carl's Jr. is an American-based fast-food restaurant chain operating in the Western and Southwestern states. As of 2015 it has started expanding and is now in multiple other countries. CKE Restaurants, Inc owns the chain.",
+                    "location": "151 E 5300 S, Murray, UT 84107",
+                    "latitude": 40.654992,
+                    "longitude": -111.896217,
+                    "image": "CJsLogo",
+                    "menu": [{
+                             "menuName": "CarlMenu",
+                             "dishes": [{
+                                        "dishName": "Big Carl",
+                                        "dishDescripsh": "Two charbroiled beef patties, our classic sauce, two slices of American cheese, and lettuce all on a seeded bun.",
+                                        "rating": 0,
+                                        "price": "$2.00",
+                                        "dishImage": "bigCarl"
+                                        }, {
+                                        "dishName": "Santa Fe Chicken Sandwich",
+                                        "dishDescripsh": "Charbroiled Chicken Breast, Melted American Cheese, Mild Green Chile, Lettuce and Santa Fe Sauce on a Honey Wheat Bun",
+                                        "rating": 0,
+                                        "price": "$4.20",
+                                        "dishImage": "santaFe"
+                                        }, {
+                                        "dishName": "Fried Zucchini",
+                                        "dishDescripsh": "Bites of Crispy, Breaded Zucchini.",
+                                        "rating": 0,
+                                        "price": "$1.50",
+                                        "dishImage": "zucch"
+                                        }]
+                             }]
+                    }, {
+                    "name": "SmashBurger",
+                    "description": "Smashburger is a fast casual burger restaurant chain with more than 300 corporate and franchise outlets operating in 32 states and 5 countries.",
+                    "location": "7020 Union Park Ave, Midvale, UT 84047",
+                    "latitude": 40.623431,
+                    "longitude": -111.858521,
+                    "image": "smashLogo",
+                    "menu": [{
+                             "menuName": "SmashMenu",
+                             "dishes": [{
+                                        "dishName": "Spicy Jalapeno Baja Burger",
+                                        "dishDescripsh": "Fresh jalapeños, guacamole, pepper jack, lettuce, tomato, onion & chipotle mayo on a spicy chipotle bun.",
+                                        "rating": 0,
+                                        "price": "$5.00",
+                                        "dishImage": "bajaBurger"
+                                        }, {
+                                        "dishName": "Truffle Mushroom Swiss Burger",
+                                        "dishDescripsh": "Truffle mayo, sautéed crimini mushrooms & aged Swiss on an egg bun.",
+                                        "rating": 0,
+                                        "price": "$5.00",
+                                        "dishImage": "truffleBurger"
+                                        }, {
+                                        "dishName": "Buffalo Blue Cheese Burger",
+                                        "dishDescripsh": "Frank’s® RedHot® Buffalo Sauce, blue cheese crumbles, lettuce, tomato & mayo on an egg bun.",
+                                        "rating": 0,
+                                        "price": "$5.00",
+                                        "dishImage": "buffaloBurger"
+                                        }]
+                             }]
+                    }]
+}
