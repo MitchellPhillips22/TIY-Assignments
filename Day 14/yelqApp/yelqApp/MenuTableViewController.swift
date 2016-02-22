@@ -49,7 +49,12 @@ class MenuTableViewController: UITableViewController {
         print(dishesArray.count)
         return dishesArray.count
     }
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "dishSegue" {
+            let dishViewController = segue.destinationViewController as! DishViewController
+            dishViewController.dishDetail = self.currentDish
+        }
+    }
 
 
 

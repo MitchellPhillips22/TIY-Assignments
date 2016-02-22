@@ -61,7 +61,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         
         if annotationView == nil {
             
-            annotationView?.pinTintColor = UIColor.redColor()
+            annotationView?.pinTintColor = UIColor.magentaColor()
             
             annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
             

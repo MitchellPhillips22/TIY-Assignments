@@ -11,6 +11,7 @@ import UIKit
 class DishViewController: UIViewController {
  
     var dishDetail: Dishes?
+    var currentRestaurant: Restaurant?
     
     @IBOutlet weak var dishDetailImage: UIImageView!
     @IBOutlet weak var dishDetailName: UILabel!
