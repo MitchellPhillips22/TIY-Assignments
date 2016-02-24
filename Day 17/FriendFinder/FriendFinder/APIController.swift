@@ -10,6 +10,8 @@ import Foundation
 
 class APIController {
 
+    var arrayOfFriends = [Friends]()
+    
     var delegate: FriendsProtocol?
     
     init(d: FriendTableViewController) {
@@ -39,9 +41,23 @@ class APIController {
                         
                         if let dict = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments) as? JSONDictionary {
                             
-                            let f = Friend(dict: dict)
+                            let f = Friends(dict: dict)
+                            
+                            let x = Friends()
+                            x.login = "Amer1c@nSn1per420"
+                            x.name = "Chris Kyle"
+                            x.email = "FratricideSux@aol.com"
+                            
+                            let y = Friends()
+                            y.login = "xXxSpAcE_GrEmLiNxXx"
+                            y.name = "Ted Cruz"
+                            y.email = "tedcruzlooksweird@gmail.com"
+                            
+                            self.arrayOfFriends.append(f)
+                            self.arrayOfFriends.append(x)
+                            self.arrayOfFriends.append(y)
                             print(f.name)
-                            self.delegate?.passInfo(f)
+                            self.delegate?.passInfo(self.arrayOfFriends)
                             
                         } else {
                             print("it broke")

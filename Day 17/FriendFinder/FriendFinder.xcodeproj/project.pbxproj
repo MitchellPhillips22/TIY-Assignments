@@ -12,10 +12,11 @@
 		1BEACD181C7CE64C005629AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BEACD161C7CE64C005629AA /* Main.storyboard */; };
 		1BEACD1A1C7CE64C005629AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BEACD191C7CE64C005629AA /* Assets.xcassets */; };
 		1BEACD1D1C7CE64C005629AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BEACD1B1C7CE64C005629AA /* LaunchScreen.storyboard */; };
-		1BEACD251C7CF4C4005629AA /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEACD241C7CF4C4005629AA /* Friend.swift */; };
+		1BEACD251C7CF4C4005629AA /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEACD241C7CF4C4005629AA /* Friends.swift */; };
 		1BEACD271C7CFAAA005629AA /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEACD261C7CFAA9005629AA /* APIController.swift */; };
 		1BEACD4D1C7D3754005629AA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEACD4C1C7D3754005629AA /* Constants.swift */; };
 		1BEACD4F1C7D57C3005629AA /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEACD4E1C7D57C3005629AA /* FriendTableViewCell.swift */; };
+		1BF3EE7A1C7E3845009C2D08 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF3EE791C7E3845009C2D08 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +27,11 @@
 		1BEACD191C7CE64C005629AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BEACD1C1C7CE64C005629AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BEACD1E1C7CE64C005629AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BEACD241C7CF4C4005629AA /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		1BEACD241C7CF4C4005629AA /* Friends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
 		1BEACD261C7CFAA9005629AA /* APIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		1BEACD4C1C7D3754005629AA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1BEACD4E1C7D57C3005629AA /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		1BF3EE791C7E3845009C2D08 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +68,9 @@
 				1BEACD141C7CE64C005629AA /* FriendTableViewController.swift */,
 				1BEACD4E1C7D57C3005629AA /* FriendTableViewCell.swift */,
 				1BEACD261C7CFAA9005629AA /* APIController.swift */,
+				1BF3EE791C7E3845009C2D08 /* DetailViewController.swift */,
 				1BEACD4C1C7D3754005629AA /* Constants.swift */,
-				1BEACD241C7CF4C4005629AA /* Friend.swift */,
+				1BEACD241C7CF4C4005629AA /* Friends.swift */,
 				1BEACD161C7CE64C005629AA /* Main.storyboard */,
 				1BEACD191C7CE64C005629AA /* Assets.xcassets */,
 				1BEACD1B1C7CE64C005629AA /* LaunchScreen.storyboard */,
@@ -152,8 +155,9 @@
 				1BEACD271C7CFAAA005629AA /* APIController.swift in Sources */,
 				1BEACD151C7CE64C005629AA /* FriendTableViewController.swift in Sources */,
 				1BEACD4F1C7D57C3005629AA /* FriendTableViewCell.swift in Sources */,
-				1BEACD251C7CF4C4005629AA /* Friend.swift in Sources */,
+				1BEACD251C7CF4C4005629AA /* Friends.swift in Sources */,
 				1BEACD131C7CE64C005629AA /* AppDelegate.swift in Sources */,
+				1BF3EE7A1C7E3845009C2D08 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +305,7 @@
 				1BEACD231C7CE64C005629AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
