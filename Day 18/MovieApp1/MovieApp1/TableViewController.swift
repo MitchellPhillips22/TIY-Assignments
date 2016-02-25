@@ -48,6 +48,8 @@ class TableViewController: UIViewController, MoviesProtocol, UITableViewDataSour
         let cell = tableView.dequeueReusableCellWithIdentifier("movieCell", forIndexPath: indexPath) as! TableViewCell
             cell.titleLabel.text = m.title
             cell.releaseDateLabel.text = m.release_date
+            cell.loadImageFromURL("https://image.tmdb.org/t/p/w185\(m.poster_path)")
+
 //            cell.imageView?.image = m.poster_path
        return cell
     }
