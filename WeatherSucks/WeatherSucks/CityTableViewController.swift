@@ -21,7 +21,7 @@ class CityTableViewController: UIViewController, WeatherProtocol, UITableViewDat
     var currentCity = City()
     var arrayOfWeather = [Weather]()
     var currentWeather = Weather()
-    var apiController: APIFunction?
+    var apiController: APIClass?
     var lat: Double = 0
     var long: Double = 0
     var addressString: String = ""
@@ -31,13 +31,12 @@ class CityTableViewController: UIViewController, WeatherProtocol, UITableViewDat
     @IBOutlet weak var zipTextField: UITextField!
     @IBAction func addCityButton(sender: UIButton) {
         apiController?.googleMapsFunction(zipTextField.text!)
-        self.apiController?.searchWeather("\(lat),\(long)")
-        print(currentCity.name)
+                print(currentCity.name)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.apiController = APIFunction(d: self)
+        self.apiController = APIClass(d: self)
         
           }
     // MARK: - Protocol Functions
@@ -54,6 +53,8 @@ class CityTableViewController: UIViewController, WeatherProtocol, UITableViewDat
         addressString = address
         self.lat = lat
         self.long = long
+        self.apiController?.searchWeather("\(lat),\(long)")
+
     }
     // MARK: - Table View Functions
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

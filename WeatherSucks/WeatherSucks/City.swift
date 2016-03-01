@@ -20,7 +20,7 @@ class City {
     
     init() {
         
-    }
+    } // allows you to 
     
     init(dict: JSONDictionary) {
         

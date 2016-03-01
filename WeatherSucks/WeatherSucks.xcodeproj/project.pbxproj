@@ -16,7 +16,7 @@
 		1BF3EEF11C810317009C2D08 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF3EEF01C810317009C2D08 /* City.swift */; };
 		1BF3EEF31C810ED0009C2D08 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF3EEF21C810ED0009C2D08 /* Constants.swift */; };
 		1BF3EEF51C811B90009C2D08 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF3EEF41C811B90009C2D08 /* Resources.swift */; };
-		1BF3EEF71C814519009C2D08 /* APIFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF3EEF61C814519009C2D08 /* APIFunction.swift */; };
+		1BF3EEF71C814519009C2D08 /* APIClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF3EEF61C814519009C2D08 /* APIClass.swift */; };
 		1BF3EEF91C82883C009C2D08 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF3EEF81C82883C009C2D08 /* CityTableViewCell.swift */; };
 		1BF3EF191C83EF47009C2D08 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF3EF181C83EF47009C2D08 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -33,7 +33,7 @@
 		1BF3EEF01C810317009C2D08 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		1BF3EEF21C810ED0009C2D08 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1BF3EEF41C811B90009C2D08 /* Resources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
-		1BF3EEF61C814519009C2D08 /* APIFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFunction.swift; sourceTree = "<group>"; };
+		1BF3EEF61C814519009C2D08 /* APIClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClass.swift; sourceTree = "<group>"; };
 		1BF3EEF81C82883C009C2D08 /* CityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
 		1BF3EF181C83EF47009C2D08 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,7 +72,7 @@
 				1BF3EEDE1C80FEB2009C2D08 /* CityTableViewController.swift */,
 				1BF3EEF81C82883C009C2D08 /* CityTableViewCell.swift */,
 				1BF3EF181C83EF47009C2D08 /* DetailViewController.swift */,
-				1BF3EEF61C814519009C2D08 /* APIFunction.swift */,
+				1BF3EEF61C814519009C2D08 /* APIClass.swift */,
 				1BF3EEF21C810ED0009C2D08 /* Constants.swift */,
 				1BF3EEEE1C81030B009C2D08 /* Weather.swift */,
 				1BF3EEF01C810317009C2D08 /* City.swift */,
@@ -158,7 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BF3EF191C83EF47009C2D08 /* DetailViewController.swift in Sources */,
-				1BF3EEF71C814519009C2D08 /* APIFunction.swift in Sources */,
+				1BF3EEF71C814519009C2D08 /* APIClass.swift in Sources */,
 				1BF3EEF31C810ED0009C2D08 /* Constants.swift in Sources */,
 				1BF3EEF11C810317009C2D08 /* City.swift in Sources */,
 				1BF3EEDF1C80FEB2009C2D08 /* CityTableViewController.swift in Sources */,

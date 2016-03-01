@@ -8,7 +8,7 @@
 
 import UIKit
 
-class APIFunction {
+class APIClass {
     
     var arrayOfWeather = [Weather]()
     var delegate: WeatherProtocol?
@@ -18,6 +18,7 @@ class APIFunction {
     init(d: CityTableViewController) {
         self.delegate = d
     }
+    
     func googleMapsFunction(zipCode: String) {
         
         let googleURL = "http://maps.googleapis.com/maps/api/geocode/json?&components=postal_code:\(zipCode)&sensor=false"
@@ -36,7 +37,7 @@ class APIFunction {
                         if let dict = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments) as? JSONDictionary {
                             if let results = dict["results"] as? JSONArray {
                                 var lat: Double = 0
-                                var long: Double = 0
+                                var lng: Double = 0
                                 var addressString: String = ""
                                 for result in results {
                                     if let address = result["formatted_address"] as? String {
@@ -49,12 +50,12 @@ class APIFunction {
                                                 lat = latitude
                                             }
                                             if let longitude = location["lng"] as? Double {
-                                                long = longitude 
+                                                lng = longitude
                                             }
                                         }
                                     }
                                 }
-                                self.delegate?.passGoogleInfo(addressString, lat: lat, long: long)
+                                self.delegate?.passGoogleInfo(addressString, lat: lat, long: lng)
                             }
                         }
                     } catch {
