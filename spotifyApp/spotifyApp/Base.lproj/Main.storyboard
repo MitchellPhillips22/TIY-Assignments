@@ -4,15 +4,17 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="Sansita-ExtraBold.otf">
-            <string>Sansita-ExtraBold</string>
-            <string>Sansita-ExtraBold</string>
-            <string>Sansita-ExtraBold</string>
-        </mutableArray>
         <mutableArray key="Sansita-ExtraBoldItalic.otf">
             <string>Sansita-ExtraBoldItalic</string>
+        </mutableArray>
+        <mutableArray key="SansitaExtraBold.otf">
+            <string>Sansita-ExtraBold</string>
+            <string>Sansita-ExtraBold</string>
+            <string>Sansita-ExtraBold</string>
+            <string>Sansita-ExtraBold</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -28,31 +30,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nah-uE-OTo">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nah-uE-OTo">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" red="0.0" green="0.06689453125" blue="0.37024568256578949" alpha="0.23999999999999999" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ArtistCell" id="UpJ-iP-5oP" customClass="ArtistTableViewCell" customModule="spotifyApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="600" height="70"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ArtistCell" id="UpJ-iP-5oP" customClass="ArtistTableViewCell" customModule="spotifyApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UpJ-iP-5oP" id="0dy-1E-Egd">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="69.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6HE-er-dRY">
-                                                    <rect key="frame" x="8" y="10.5" width="99" height="48.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6HE-er-dRY">
+                                                    <rect key="frame" x="8" y="25.5" width="567" height="48.5"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" name="Sansita-ExtraBold" family="Sansita" pointSize="40"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.53893400499999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
+                                                <constraint firstItem="6HE-er-dRY" firstAttribute="width" secondItem="0dy-1E-Egd" secondAttribute="width" id="1Ez-RN-ACg"/>
                                                 <constraint firstItem="6HE-er-dRY" firstAttribute="leading" secondItem="0dy-1E-Egd" secondAttribute="leadingMargin" id="BMh-am-kej"/>
                                                 <constraint firstItem="6HE-er-dRY" firstAttribute="centerY" secondItem="0dy-1E-Egd" secondAttribute="centerY" id="iDd-eE-bQ3"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="artistLabel" destination="6HE-er-dRY" id="SML-Gt-kl1"/>
                                         </connections>
@@ -64,7 +70,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Nah-uE-OTo" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="42e-qP-ZT5"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nah-uE-OTo" secondAttribute="bottom" id="6R8-s0-Twc"/>
@@ -77,10 +83,10 @@
                         <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="xey-M3-DXu">
                             <rect key="frame" x="180" y="7" width="240" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <fontDescription key="fontDescription" name="Sansita-ExtraBold" family="Sansita" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="3sk-c0-JGq">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="3sk-c0-JGq">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vCU-sk-eWv">
                                 <rect key="frame" x="447" y="7" width="133" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -113,45 +119,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lG7-Rm-5mQ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lG7-Rm-5mQ">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TrackCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TrackCell" id="PXV-Zx-CqH" customClass="TracksTableViewCell" customModule="spotifyApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="600" height="55"/>
+                                        <rect key="frame" x="0.0" y="92" width="600" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PXV-Zx-CqH" id="RI9-kh-WdG">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="54.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rtd-St-dcT">
-                                                    <rect key="frame" x="8" y="28.5" width="41.5" height="20.5"/>
-                                                    <fontDescription key="fontDescription" name="Sansita-ExtraBoldItalic" family="Sansita" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="69" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3L-hE-NBT">
-                                                    <rect key="frame" x="542" y="3" width="50" height="48.5"/>
+                                                    <rect key="frame" x="542" y="5" width="50" height="48.5"/>
                                                     <fontDescription key="fontDescription" name="Sansita-ExtraBold" family="Sansita" pointSize="40"/>
                                                     <color key="textColor" red="1" green="0.7543945312" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mla-Az-3G9">
-                                                    <rect key="frame" x="8" y="0.0" width="49.5" height="24.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="Mla-Az-3G9">
+                                                    <rect key="frame" x="8" y="0.0" width="480" height="24.5"/>
                                                     <fontDescription key="fontDescription" name="Sansita-ExtraBold" family="Sansita" pointSize="20"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.53893400499999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="Rtd-St-dcT">
+                                                    <rect key="frame" x="8" y="28.5" width="480" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Sansita-ExtraBoldItalic" family="Sansita" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="Mla-Az-3G9" firstAttribute="leading" secondItem="RI9-kh-WdG" secondAttribute="leading" constant="8" id="73p-qj-qMb"/>
+                                                <constraint firstItem="Mla-Az-3G9" firstAttribute="width" secondItem="RI9-kh-WdG" secondAttribute="width" multiplier="0.8" id="7c1-Nt-HTN"/>
                                                 <constraint firstItem="Rtd-St-dcT" firstAttribute="leading" secondItem="RI9-kh-WdG" secondAttribute="leading" constant="8" id="Eg8-9d-FaR"/>
                                                 <constraint firstItem="Mla-Az-3G9" firstAttribute="top" secondItem="RI9-kh-WdG" secondAttribute="top" id="H6u-LX-UiT"/>
                                                 <constraint firstItem="Rtd-St-dcT" firstAttribute="top" secondItem="Mla-Az-3G9" secondAttribute="bottom" constant="4" id="KkF-Gi-dWE"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="n3L-hE-NBT" secondAttribute="trailing" id="L0I-La-9UY"/>
+                                                <constraint firstItem="Rtd-St-dcT" firstAttribute="width" secondItem="RI9-kh-WdG" secondAttribute="width" multiplier="0.8" id="vta-nv-wV2"/>
                                                 <constraint firstItem="n3L-hE-NBT" firstAttribute="centerY" secondItem="RI9-kh-WdG" secondAttribute="centerY" id="yFo-oO-lzx"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="albumNameLabel" destination="Rtd-St-dcT" id="5qp-Xf-ide"/>
                                             <outlet property="popularityLabel" destination="n3L-hE-NBT" id="ghM-N7-Ggc"/>
