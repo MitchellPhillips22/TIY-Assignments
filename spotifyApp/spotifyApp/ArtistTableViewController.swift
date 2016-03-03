@@ -12,8 +12,6 @@ protocol MusicProtocol {
     
     func passArtistInfo(artist: Artist)
     
-    func passTrackList(tracks: [Track])
-    
 }
 
 class ArtistTableViewController: UIViewController, MusicProtocol, UITableViewDataSource, UITableViewDelegate {
@@ -27,6 +25,7 @@ class ArtistTableViewController: UIViewController, MusicProtocol, UITableViewDat
         apiControl?.findArtist(artistSearchText.text!)
             print(currentArtist.name)
         
+        
     }
     
     var arrayOfArtists = [Artist]()
@@ -39,24 +38,27 @@ class ArtistTableViewController: UIViewController, MusicProtocol, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.arrayOfArtists = DataStore.sharedInstance.arrayOfArtists
+        
         self.apiControl = APIController(a: self)
+        
+        if DataStore.sharedInstance.saveArtists() {
+            print("it save")
+        } else {
+            print("it didn't save")
+        }
     
     }
-    
-    func passTrackList(tracks: [Track]) {
-       dispatch_async(dispatch_get_main_queue(), {
-        self.currentArtist.arrayOfTracks = tracks
-        self.arrayOfArtists.insert(self.currentArtist, atIndex: 0)
-        self.artistTableView.reloadData()
-        print(self.currentArtist.arrayOfTracks.count)
-        })
-    }
+ 
     
     func passArtistInfo(artist: Artist) {
         dispatch_async(dispatch_get_main_queue(), {
         self.currentArtist = artist
+        self.arrayOfArtists.insert(self.currentArtist, atIndex: 0)
+        self.artistTableView.reloadData()
+            
         })
-        apiControl?.searchTopTracks(artist.idString)
+        
        
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -67,9 +69,9 @@ class ArtistTableViewController: UIViewController, MusicProtocol, UITableViewDat
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-       performSegueWithIdentifier("TrackSegue", sender: self)
         currentArtist = arrayOfArtists[indexPath.row]
-    }
+       performSegueWithIdentifier("TrackSegue", sender: self)
+           }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let a = arrayOfArtists[indexPath.row]
         

@@ -19,6 +19,7 @@
 		1B0070C11C852B6F0078BB07 /* ArtistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0070C01C852B6F0078BB07 /* ArtistTableViewCell.swift */; };
 		1B0070C51C8546090078BB07 /* TracksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0070C41C8546090078BB07 /* TracksTableViewCell.swift */; };
 		1B0070C71C8546230078BB07 /* TracksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0070C61C8546230078BB07 /* TracksTableViewController.swift */; };
+		1BEA56051C877C9600965CE4 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEA56041C877C9600965CE4 /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		1B0070C31C852D4E0078BB07 /* Sansita-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sansita-ExtraBold.otf"; sourceTree = "<group>"; };
 		1B0070C41C8546090078BB07 /* TracksTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TracksTableViewCell.swift; sourceTree = "<group>"; };
 		1B0070C61C8546230078BB07 /* TracksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TracksTableViewController.swift; sourceTree = "<group>"; };
+		1BEA56041C877C9600965CE4 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				1B0070BC1C8525D00078BB07 /* APIController.swift */,
 				1B0070B81C8515EE0078BB07 /* Constants.swift */,
 				1B0070BE1C8526EC0078BB07 /* Artist.swift */,
+				1BEA56041C877C9600965CE4 /* DataStore.swift */,
 				1B0070BA1C8519FC0078BB07 /* Track.swift */,
 				1B0070AA1C84FAE50078BB07 /* Main.storyboard */,
 				1B0070C21C852D410078BB07 /* Sansita-ExtraBoldItalic.otf */,
@@ -164,6 +167,7 @@
 				1B0070BF1C8526EC0078BB07 /* Artist.swift in Sources */,
 				1B0070C71C8546230078BB07 /* TracksTableViewController.swift in Sources */,
 				1B0070A91C84FAE50078BB07 /* ArtistTableViewController.swift in Sources */,
+				1BEA56051C877C9600965CE4 /* DataStore.swift in Sources */,
 				1B0070A71C84FAE50078BB07 /* AppDelegate.swift in Sources */,
 				1B0070B91C8515EE0078BB07 /* Constants.swift in Sources */,
 				1B0070BB1C8519FC0078BB07 /* Track.swift in Sources */,
@@ -319,6 +323,7 @@
 				1B0070B71C84FAE50078BB07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

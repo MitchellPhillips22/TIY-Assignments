@@ -8,14 +8,19 @@
 
 import Foundation
 
-class Artist {
+let kName = "name"
+let kImage = "image"
+let kIdString = "idString"
+let kArrayOfTracks = "arrayOfTracks"
+
+class Artist: NSObject, NSCoding {
     
     var name: String = ""
     var image: String = ""
     var idString: String = ""
     var arrayOfTracks = [Track]()
     
-    init() {
+    override init() {
         
     }
     
@@ -28,5 +33,19 @@ class Artist {
             self.idString = idString
         }
         
+    }
+    required init?(coder aDecoder: NSCoder) {
+        self.name = aDecoder.decodeObjectForKey(kName) as! String
+        self.image = aDecoder.decodeObjectForKey(kImage) as! String
+        self.idString = aDecoder.decodeObjectForKey(kIdString) as! String
+        self.arrayOfTracks = aDecoder.decodeObjectForKey(kArrayOfTracks) as! [Track]
+        
+        super.init()
+    }
+    func encodeWithCoder(aCoder: NSCoder) {
+        aCoder.encodeObject(name, forKey: kName)
+        aCoder.encodeObject(image, forKey: kImage)
+        aCoder.encodeObject(idString, forKey: kIdString)
+        aCoder.encodeObject(arrayOfTracks, forKey: kArrayOfTracks)
     }
 }

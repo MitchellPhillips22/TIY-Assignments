@@ -8,14 +8,17 @@
 
 import Foundation
 
+let kAlbumName = "albumName"
+let kSongName = "songName"
+let kPopularity = "popularity"
 
-class Track {
+class Track: NSObject, NSCoding {
     
     var albumName: String = ""
     var songName: String = ""
     var popularity: Int = 0
     
-    init() {
+    override init() {
         
     }
     
@@ -36,6 +39,18 @@ class Track {
             self.popularity = popularity
             print(self.popularity)
         }
+    }
+    required init?(coder aDecoder: NSCoder) {
+        self.albumName = aDecoder.decodeObjectForKey(kAlbumName) as! String
+        self.songName = aDecoder.decodeObjectForKey(kSongName) as! String
+        self.popularity = aDecoder.decodeIntegerForKey(kPopularity)
         
+        super.init()
+    }
+    func encodeWithCoder(aCoder: NSCoder) {
+        
+        aCoder.encodeObject(albumName, forKey: kAlbumName)
+        aCoder.encodeObject(songName, forKey: kSongName)
+        aCoder.encodeInteger(popularity, forKey: kPopularity)
     }
 }
