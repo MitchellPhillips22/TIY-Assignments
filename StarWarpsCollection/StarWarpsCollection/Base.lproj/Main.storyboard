@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Star Warps View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="StarWarpsViewController" customModule="StarWarpsCollection" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GNQ-B7-9op">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hth-db-RTW">
+                                    <size key="itemSize" width="230" height="222"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PersonCell" id="9XC-4P-39d" customClass="StarWarpsCollectionViewCell" customModule="StarWarpsCollection" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="230" height="222"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="230" height="222"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYO-Cd-cni">
+                                                    <rect key="frame" x="0.0" y="0.0" width="230" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICI-Vg-Rcg">
+                                                    <rect key="frame" x="0.0" y="35" width="230" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0W-i7-pia">
+                                                    <rect key="frame" x="0.0" y="71" width="230" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="ICI-Vg-Rcg" firstAttribute="top" secondItem="GYO-Cd-cni" secondAttribute="bottom" constant="15" id="28t-2b-Lhz"/>
+                                            <constraint firstItem="T0W-i7-pia" firstAttribute="top" secondItem="ICI-Vg-Rcg" secondAttribute="bottom" constant="15" id="2Vh-w6-hvk"/>
+                                            <constraint firstItem="GYO-Cd-cni" firstAttribute="top" secondItem="9XC-4P-39d" secondAttribute="top" id="4iO-aH-3DK"/>
+                                            <constraint firstItem="GYO-Cd-cni" firstAttribute="width" secondItem="9XC-4P-39d" secondAttribute="width" id="8Qp-bN-sqi"/>
+                                            <constraint firstItem="T0W-i7-pia" firstAttribute="width" secondItem="9XC-4P-39d" secondAttribute="width" id="Tyg-WR-vsP"/>
+                                            <constraint firstItem="T0W-i7-pia" firstAttribute="centerX" secondItem="9XC-4P-39d" secondAttribute="centerX" id="aSa-bN-3C6"/>
+                                            <constraint firstItem="ICI-Vg-Rcg" firstAttribute="width" secondItem="9XC-4P-39d" secondAttribute="width" id="bKr-Mq-Uxh"/>
+                                            <constraint firstItem="ICI-Vg-Rcg" firstAttribute="centerX" secondItem="9XC-4P-39d" secondAttribute="centerX" id="p2T-Ky-PGZ"/>
+                                            <constraint firstItem="GYO-Cd-cni" firstAttribute="centerX" secondItem="9XC-4P-39d" secondAttribute="centerX" id="rq5-WN-z97"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="hairColorLabel" destination="ICI-Vg-Rcg" id="gLW-bM-noH"/>
+                                            <outlet property="nameLabel" destination="GYO-Cd-cni" id="A3S-ry-l3p"/>
+                                            <outlet property="skinColorLabel" destination="T0W-i7-pia" id="qGT-dd-Wap"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlanetCell" id="nhf-a6-5tx" customClass="PlanetCollectionViewCell" customModule="StarWarpsCollection" customModuleProvider="target">
+                                        <rect key="frame" x="330" y="0.0" width="230" height="222"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="230" height="222"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HnL-aP-ELc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="230" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBk-cc-clW">
+                                                    <rect key="frame" x="0.0" y="35" width="230" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUY-M0-iei">
+                                                    <rect key="frame" x="0.0" y="71" width="230" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="WUY-M0-iei" firstAttribute="centerX" secondItem="nhf-a6-5tx" secondAttribute="centerX" id="1ww-L1-BDP"/>
+                                            <constraint firstItem="HnL-aP-ELc" firstAttribute="top" secondItem="nhf-a6-5tx" secondAttribute="top" id="6gn-S0-diM"/>
+                                            <constraint firstItem="WUY-M0-iei" firstAttribute="top" secondItem="OBk-cc-clW" secondAttribute="bottom" constant="15" id="AO3-dc-F3p"/>
+                                            <constraint firstItem="OBk-cc-clW" firstAttribute="top" secondItem="HnL-aP-ELc" secondAttribute="bottom" constant="15" id="Dsg-W6-gXy"/>
+                                            <constraint firstItem="WUY-M0-iei" firstAttribute="width" secondItem="nhf-a6-5tx" secondAttribute="width" id="Ewm-CE-kOP"/>
+                                            <constraint firstItem="HnL-aP-ELc" firstAttribute="width" secondItem="nhf-a6-5tx" secondAttribute="width" id="HOX-nT-idz"/>
+                                            <constraint firstItem="OBk-cc-clW" firstAttribute="width" secondItem="nhf-a6-5tx" secondAttribute="width" id="Owz-Zv-BC8"/>
+                                            <constraint firstItem="OBk-cc-clW" firstAttribute="centerX" secondItem="nhf-a6-5tx" secondAttribute="centerX" id="xuf-Ep-5ZH"/>
+                                            <constraint firstItem="HnL-aP-ELc" firstAttribute="centerX" secondItem="nhf-a6-5tx" secondAttribute="centerX" id="zHa-FY-u66"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="hairColorLabel" destination="OBk-cc-clW" id="tMm-zm-tLQ"/>
+                                            <outlet property="nameLabel" destination="HnL-aP-ELc" id="k1Y-DL-ixm"/>
+                                            <outlet property="planetNameLabel" destination="HnL-aP-ELc" id="CHQ-Uy-UBr"/>
+                                            <outlet property="populationLabel" destination="WUY-M0-iei" id="NR6-u8-UoR"/>
+                                            <outlet property="skinColorLabel" destination="WUY-M0-iei" id="F08-ET-IGT"/>
+                                            <outlet property="terrainLabel" destination="OBk-cc-clW" id="OXP-wi-qap"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="6cS-Y4-2Ez"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="XOK-Iw-qNW"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GNQ-B7-9op" secondAttribute="bottom" id="658-qB-Dyv"/>
+                            <constraint firstItem="GNQ-B7-9op" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XUg-ZC-QaI"/>
+                            <constraint firstItem="GNQ-B7-9op" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bqH-lh-1Pc"/>
+                            <constraint firstItem="GNQ-B7-9op" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fkc-rU-xzw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GNQ-B7-9op" secondAttribute="trailing" id="ijA-km-rZJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="308"/>
+        </scene>
+    </scenes>
+</document>
