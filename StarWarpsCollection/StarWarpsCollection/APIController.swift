@@ -11,8 +11,8 @@ import Foundation
 class APIController {
     
     var currentPlanet = Planet()
-    var currentPerson = People()
-    var arrayOfPeople = [People]()
+    var currentPerson = Person()
+    var arrayOfPeople = [Person]()
     var arrayOfPlanets = [Planet]()
     
 func findPlanets() {
@@ -31,7 +31,7 @@ func findPlanets() {
             if let data = data {
                 do {
                     if let dict = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments) as? JSONDictionary {
-                        if let results = dict["name"] as? JSONArray {
+                        if let results = dict["name"] as? JSONDictionary {
                             for result in results {
                                 let n = Planet(dict: result)
                                 self.arrayOfPlanets.append(n)
@@ -63,9 +63,9 @@ func findPlanets() {
                 if let data = data {
                     do {
                         if let dict = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments) as? JSONDictionary {
-                            if let results = dict["name"] as? JSONArray {
+                            if let results = dict["name"] as? JSONDictionary {
                                 for result in results {
-                                    let n = People(dict: result)
+                                    let n = Person(dict: result)
                                     self.arrayOfPeople.append(n)
                                 }}
                         }

@@ -10,7 +10,7 @@ import UIKit
 
 class StarWarpsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var hairColorLabel: UILabel!
-    @IBOutlet weak var skinColorLabel: UILabel!
+    @IBOutlet weak var eyeColorLabel: UILabel!
+    @IBOutlet weak var createdLabel: UILabel!
     
 }
